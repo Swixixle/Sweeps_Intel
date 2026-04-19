@@ -1,5 +1,4 @@
-# One URL per line for bounded discovery (intel.discover). Lines starting with # are ignored.
-# Add or remove URLs to match what you are allowed to crawl.
+# One URL per line for intel.extract (--urls-file). Lines starting with # are ignored.
 https://www.chumbacasino.com/
 https://www.luckylandslots.com/
 https://www.globalpoker.com/

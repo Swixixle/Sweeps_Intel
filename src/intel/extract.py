@@ -174,23 +174,52 @@ def run_extract(
 
 
 def _urls_from_discovered(candidates_dir: Path, limit: int) -> list[str]:
+    """Build URL list from discover outputs: domains plus page request/final URLs."""
+    seen: set[str] = set()
+    ordered: list[str] = []
+
+    def add(u: str) -> None:
+        u = u.strip()
+        if not u or u in seen:
+            return
+        seen.add(u)
+        ordered.append(u)
+
     p = candidates_dir / "discovered_domains.json"
-    if not p.exists():
-        return []
-    rows = json.loads(p.read_text(encoding="utf-8"))
-    urls: list[str] = []
-    for r in rows[:limit]:
-        d = r.get("domain")
-        if d:
-            urls.append(f"https://{d}/")
-    return urls
+    if p.exists():
+        rows = json.loads(p.read_text(encoding="utf-8"))
+        if isinstance(rows, list):
+            for r in rows:
+                if not isinstance(r, dict):
+                    continue
+                d = r.get("domain")
+                if d and str(d).strip():
+                    add(f"https://{str(d).strip().rstrip('/')}/")
+
+    pp = candidates_dir / "discovered_pages.json"
+    if pp.exists():
+        pages = json.loads(pp.read_text(encoding="utf-8"))
+        if isinstance(pages, list):
+            for row in pages:
+                if not isinstance(row, dict):
+                    continue
+                for key in ("final_url", "requested_url"):
+                    u = row.get(key)
+                    if u and str(u).strip().lower().startswith(("http://", "https://")):
+                        add(str(u).strip())
+
+    return ordered[:limit]
 
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description="Extract fingerprint signals from URLs (research only).")
     p.add_argument("--repo-root", type=Path, default=Path.cwd())
     p.add_argument("--urls-file", type=Path, default=None, help="One URL per line")
-    p.add_argument("--from-discovered", action="store_true", help="Use data/candidates/discovered_domains.json")
+    p.add_argument(
+        "--from-discovered",
+        action="store_true",
+        help="Use discovered_domains.json and discovered_pages.json under data/candidates/",
+    )
     p.add_argument("--limit", type=int, default=30)
     p.add_argument("--normalized", type=Path, default=None)
     p.add_argument("--research-dir", type=Path, default=None)
@@ -202,9 +231,11 @@ def main(argv: list[str] | None = None) -> int:
     reps = args.reports_dir or (repo / "reports")
     urls: list[str] = []
     if args.urls_file and args.urls_file.exists():
-        urls.extend(
-            ln.strip() for ln in args.urls_file.read_text(encoding="utf-8").splitlines() if ln.strip()
-        )
+        for ln in args.urls_file.read_text(encoding="utf-8").splitlines():
+            s = ln.strip()
+            if not s or s.startswith("#"):
+                continue
+            urls.append(s)
     if args.from_discovered:
         urls.extend(_urls_from_discovered(repo / "data" / "candidates", args.limit))
     if not urls:

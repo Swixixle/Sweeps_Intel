@@ -9,7 +9,34 @@ from unittest.mock import patch
 from intel.cluster import run_cluster
 from intel.discover import run_discover
 from intel.enrich import extract_signals_from_html
+from intel.extract import _urls_from_discovered
 from intel.review_queue import run_review_queue
+
+
+class TestExtractUrlsFromDiscovered(unittest.TestCase):
+    def test_merges_domains_and_page_urls(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / "discovered_domains.json").write_text(
+                json.dumps([{"domain": "a.example"}, {"domain": "b.example"}]),
+                encoding="utf-8",
+            )
+            (root / "discovered_pages.json").write_text(
+                json.dumps(
+                    [
+                        {
+                            "requested_url": "https://c.example/old",
+                            "final_url": "https://c.example/new",
+                        }
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            urls = _urls_from_discovered(root, limit=20)
+            self.assertIn("https://a.example/", urls)
+            self.assertIn("https://b.example/", urls)
+            self.assertIn("https://c.example/old", urls)
+            self.assertIn("https://c.example/new", urls)
 
 
 class TestDiscoverDedupe(unittest.TestCase):
