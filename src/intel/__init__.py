@@ -12,6 +12,7 @@ __all__ = [
     "cluster",
     "review_queue",
     "review_rules",
+    "export_reviewed_blocklist",
     "stage_research_import",
     "promote_research_candidates",
 ]

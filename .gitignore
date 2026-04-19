@@ -2,3 +2,19 @@ __pycache__/
 *.py[cod]
 .Python
 .pytest_cache/
+
+# Ephemeral pipeline / research outputs (keep seeds + code tracked)
+data/candidates/discovered_domains.json
+data/candidates/discovered_pages.json
+data/research_candidates/extracted_entities.json
+data/research_candidates/extracted_fingerprints.json
+data/research_candidates/review_queue.json
+data/research_candidates/review_decisions.json
+data/research_candidates/staged_clusters.json
+data/published/reviewed_domains.txt
+data/published/reviewed_blocklist.json
+
+reports/discovery/
+reports/clusters/
+reports/extraction/
+reports/review_rules/
