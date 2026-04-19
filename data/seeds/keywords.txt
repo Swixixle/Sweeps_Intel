@@ -1,0 +1,10 @@
+# Terms that may appear on sweeps/gambling/promo pages (for future classify / enrich).
+# One term or phrase per line; # starts a comment.
+
+sweeps casino
+social casino
+gold coins
+sweeps coins
+no purchase necessary
+amoe
+free sc

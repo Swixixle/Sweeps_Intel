@@ -1,0 +1,57 @@
+[
+  {
+    "confidence": 0.85,
+    "evidence": {
+      "anchor_text": "same trusted company behind LuckyLand Slots and Chumba Casino",
+      "url": "https://www.luckylandslots.com/faqs"
+    },
+    "from_id": "operator_luckyland",
+    "relationship": "related_to",
+    "source": "official_faq",
+    "to_id": "operator_chumba"
+  },
+  {
+    "confidence": 0.95,
+    "evidence": {
+      "anchor_text": "Pragmatic Play group page on Stake.us",
+      "url": "https://stake.us/casino/group/pragmatic-play"
+    },
+    "from_id": "operator_stake_us",
+    "relationship": "uses_provider",
+    "source": "official_provider_page",
+    "to_id": "provider_pragmatic_play"
+  },
+  {
+    "confidence": 0.95,
+    "evidence": {
+      "anchor_text": "ICONIC21 group page on Stake.us",
+      "url": "https://stake.us/casino/group/iconic21"
+    },
+    "from_id": "operator_stake_us",
+    "relationship": "uses_provider",
+    "source": "official_provider_page",
+    "to_id": "provider_iconic21"
+  },
+  {
+    "confidence": 0.85,
+    "evidence": {
+      "anchor_text": "Animo Studios game page on Stake.us",
+      "url": "https://stake.us/casino/games/animo-studios-sky-roulette"
+    },
+    "from_id": "operator_stake_us",
+    "relationship": "uses_provider",
+    "source": "official_game_page",
+    "to_id": "provider_animo_studios"
+  },
+  {
+    "confidence": 0.9,
+    "evidence": {
+      "anchor_text": "new software from the makers of Fire Kirin",
+      "url": "https://pandamaster.com/"
+    },
+    "from_id": "operator_panda_master",
+    "relationship": "related_to",
+    "source": "official_site",
+    "to_id": "operator_fire_kirin"
+  }
+]

@@ -1,0 +1,2 @@
+id,name,domain_or_pattern,payment_type,status,confidence,notes,sources
+payment_manual_001,REPLACE cashier or wallet brand,pending-payment-01.invalid,kyc_wallet,inactive,0.40,Replace placeholder domain when curated,manual_seed

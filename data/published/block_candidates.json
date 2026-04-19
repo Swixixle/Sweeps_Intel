@@ -1,0 +1,205 @@
+{
+  "domains": [
+    "betmgm.com",
+    "betrivers.com",
+    "bgaming-network.com",
+    "bovada.lv",
+    "caesars.com",
+    "chumbacasino.com",
+    "clubs-poker.com",
+    "crowncoinscasino.com",
+    "dingdingding.com",
+    "draftkings.com",
+    "fanduel.com",
+    "fliff.com",
+    "fortunecoins.com",
+    "globalpoker.com",
+    "hellomillions.com",
+    "high5casino.com",
+    "ignitioncasino.eu",
+    "jackpota.com",
+    "luckylandslots.com",
+    "mcluck.com",
+    "mybookie.ag",
+    "playson.com",
+    "pointsbet.com",
+    "pragmaticplay.com",
+    "pulsz.com",
+    "pulszbingo.com",
+    "rebet.com",
+    "sportzino.com",
+    "spree.com",
+    "stake.us",
+    "wowvegas.com",
+    "yaycasino.com",
+    "zulacasino.com"
+  ],
+  "generated_at": "2026-04-19T13:01:58Z",
+  "source_entities": [
+    {
+      "domain": "chumbacasino.com",
+      "entity_id": "operator_chumba",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "luckylandslots.com",
+      "entity_id": "operator_luckyland",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "stake.us",
+      "entity_id": "operator_stake_us",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "wowvegas.com",
+      "entity_id": "operator_wow_vegas",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "pulsz.com",
+      "entity_id": "operator_pulsz",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "pulszbingo.com",
+      "entity_id": "operator_pulsz_bingo",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "mcluck.com",
+      "entity_id": "operator_mcluck",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "hellomillions.com",
+      "entity_id": "operator_hello_millions",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "sportzino.com",
+      "entity_id": "operator_sportzino",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "crowncoinscasino.com",
+      "entity_id": "operator_crown_coins",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "jackpota.com",
+      "entity_id": "operator_jackpota",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "zulacasino.com",
+      "entity_id": "operator_zula",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "high5casino.com",
+      "entity_id": "operator_high5",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "globalpoker.com",
+      "entity_id": "operator_global_poker",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "fortunecoins.com",
+      "entity_id": "operator_fortune_coins",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "yaycasino.com",
+      "entity_id": "operator_yay",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "dingdingding.com",
+      "entity_id": "operator_ding_ding_ding",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "spree.com",
+      "entity_id": "operator_spree",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "clubs-poker.com",
+      "entity_id": "operator_clubs_poker",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "fliff.com",
+      "entity_id": "operator_fliff",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "rebet.com",
+      "entity_id": "operator_rebet",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "draftkings.com",
+      "entity_id": "operator_draftkings",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "fanduel.com",
+      "entity_id": "operator_fanduel",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "betmgm.com",
+      "entity_id": "operator_betmgm",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "caesars.com",
+      "entity_id": "operator_caesars",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "betrivers.com",
+      "entity_id": "operator_betrivers",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "pointsbet.com",
+      "entity_id": "operator_points_bet",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "bovada.lv",
+      "entity_id": "operator_bovada",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "ignitioncasino.eu",
+      "entity_id": "operator_ignition",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "mybookie.ag",
+      "entity_id": "operator_mybookie",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "pragmaticplay.com",
+      "entity_id": "provider_pragmatic_play",
+      "entity_type": "provider"
+    },
+    {
+      "domain": "bgaming-network.com",
+      "entity_id": "provider_bgaming",
+      "entity_type": "provider"
+    },
+    {
+      "domain": "playson.com",
+      "entity_id": "provider_playson",
+      "entity_type": "provider"
+    }
+  ]
+}

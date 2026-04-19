@@ -1,0 +1,3 @@
+# One URL per line for the monitoring crawl. Lines starting with # are ignored.
+# Example (replace with real promoter or operator landing pages you own or have rights to monitor):
+# https://example-sweeps-review.example/

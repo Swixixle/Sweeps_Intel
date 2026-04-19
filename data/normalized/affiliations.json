@@ -1,0 +1,44 @@
+[
+  {
+    "evidence": [
+      {
+        "type": "shared_provider",
+        "value": "animo studios",
+        "weight": 20
+      }
+    ],
+    "generated_at": "2026-04-19T13:16:00Z",
+    "label": "weak_signal",
+    "left_id": "operator_stake_us",
+    "right_id": "provider_animo_studios",
+    "score": 20
+  },
+  {
+    "evidence": [
+      {
+        "type": "shared_provider",
+        "value": "iconic21",
+        "weight": 20
+      }
+    ],
+    "generated_at": "2026-04-19T13:16:00Z",
+    "label": "weak_signal",
+    "left_id": "operator_stake_us",
+    "right_id": "provider_iconic21",
+    "score": 20
+  },
+  {
+    "evidence": [
+      {
+        "type": "shared_provider",
+        "value": "pragmatic play",
+        "weight": 20
+      }
+    ],
+    "generated_at": "2026-04-19T13:16:00Z",
+    "label": "weak_signal",
+    "left_id": "operator_stake_us",
+    "right_id": "provider_pragmatic_play",
+    "score": 20
+  }
+]

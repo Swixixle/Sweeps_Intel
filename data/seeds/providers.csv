@@ -1,0 +1,6 @@
+id,name,domain,provider_type,status,confidence,blockable,notes,sources
+provider_pragmatic_play,Pragmatic Play,pragmaticplay.com,game_studio,active,0.95,true,Verified Stake.us provider hub,official_provider_page|manual_seed|blocklist_2026-04
+provider_bgaming,BGaming,bgaming-network.com,game_studio,active,0.93,true,,manual_seed|blocklist_2026-04
+provider_playson,Playson,playson.com,game_studio,active,0.92,true,,manual_seed|blocklist_2026-04
+provider_iconic21,ICONIC21,,game_studio,active,0.85,false,Domain unverified; Stake.us official provider page,official_provider_page
+provider_animo_studios,Animo Studios,,game_studio,active,0.75,false,Domain unverified; Stake.us official game page,official_game_page

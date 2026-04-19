@@ -1,0 +1,6 @@
+from_id,to_id,relationship,confidence,source,evidence_url,evidence_text
+operator_luckyland,operator_chumba,related_to,0.85,official_faq,https://www.luckylandslots.com/faqs,same trusted company behind LuckyLand Slots and Chumba Casino
+operator_stake_us,provider_pragmatic_play,uses_provider,0.95,official_provider_page,https://stake.us/casino/group/pragmatic-play,Pragmatic Play group page on Stake.us
+operator_stake_us,provider_iconic21,uses_provider,0.95,official_provider_page,https://stake.us/casino/group/iconic21,ICONIC21 group page on Stake.us
+operator_stake_us,provider_animo_studios,uses_provider,0.85,official_game_page,https://stake.us/casino/games/animo-studios-sky-roulette,Animo Studios game page on Stake.us
+operator_panda_master,operator_fire_kirin,related_to,0.90,official_site,https://pandamaster.com/,new software from the makers of Fire Kirin

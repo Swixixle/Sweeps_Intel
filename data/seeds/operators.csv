@@ -1,0 +1,39 @@
+id,name,domain,categories,status,confidence,legal_entity,jurisdictions,provider_names,notes,sources
+operator_chumba,Chumba Casino,chumbacasino.com,sweeps_casino|social_casino,active,0.99,VGW Malta Limited|VGW Games Limited,US|Canada|Malta,,Official site: operated by VGW Malta Limited; sweepstakes sponsor/promoter VGW Games Limited per rules,official_site|terms|sweeps_rules|blocklist_2026-04
+operator_luckyland,LuckyLand Slots,luckylandslots.com,sweeps_casino|social_casino,active,0.95,VGW|VGW Group,US,,Privacy/terms cite VGW; some legal pages returned access denied on retrieval,official_site|privacy|faq|blocklist_2026-04
+operator_stake_us,Stake.us,stake.us,sweeps_casino|social_casino,active,0.99,Sweepsteaks Limited,US|Cyprus,Pragmatic Play|ICONIC21|Animo Studios,Terms: Sweepsteaks Limited Cyprus HE436222,official_terms|provider_pages|blocklist_2026-04
+operator_wow_vegas,WOW Vegas,wowvegas.com,social_casino|sweeps_casino,active,0.98,MW Services Limited,Gibraltar,,FAQ/affiliate terms: MW Services Limited Gibraltar no. 120828,official_site|faq|affiliate_terms|blocklist_2026-04
+operator_bc_game,BC.GAME,bc.game,crypto_casino|sportsbook,active,0.99,Twocent Technology Limited,Belize,,Official site: operated by Twocent Technology Limited (Belize registration 41939),official_site|terms|blocklist_2026-04
+operator_sidepot,Sidepot,sidepot.us,sweeps_casino|social_casino,active,0.97,,US,,Official site and terms verify sweeps/social-casino structure; legal entity not confirmed in this pass,official_site|terms|sweepstakes_rules|blocklist_2026-04
+operator_myprize_us,MyPrize.US,myprize.us,sweeps_casino|social_casino,active,0.99,"My Technology, Inc.",US,,Official terms identify My Technology Inc.; site/rules confirm Gold Coins and Sweeps Cash structure,official_site|terms|sweepstakes_rules|blocklist_2026-04
+operator_yotta,Yotta,withyotta.com|games.withyotta.com|banking.withyotta.com,sweepstakes_platform|social_gaming,active,0.99,Yotta Technologies Inc.,US,,Official site and terms: Yotta Technologies Inc.; Token Games vs Sweepstakes and YottaCash,official_site|terms|sweepstakes_rules|blocklist_2026-04
+operator_huuuge_casino,Huuuge Casino,huuugegames.com/huuuge-casino,social_casino|free_to_play_casino,active,0.93,,Global,,Free-to-play social casino product; legal entity not confirmed in this pass. Canonical product path /huuuge-casino.,official_site|game_page|eula|blocklist_2026-04
+operator_panda_master,Panda Master,pandamaster.com,fish_game_platform|skill_game_platform,active,0.94,,Global,Fire Kirin,Official site: new software from the makers of Fire Kirin,official_site|menu_page|blocklist_2026-04
+operator_fire_kirin,Fire Kirin,firekirin.com,sweepstakes_gaming|fish_game_platform,active,0.80,,,,Official pages describe sweepstakes/fish-game platform; legal entity not confirmed in this pass,official_site|contact_page|blocklist_2026-04
+operator_novig,Novig,novig.com,sports_trading|prediction_market,active,0.85,,,,Official site: sports trading / prediction-market positioning; legal entity not confirmed in this pass,official_site|blocklist_2026-04
+operator_pulsz,Pulsz,pulsz.com,sweeps_casino,active,0.97,,US,,,manual_seed|blocklist_2026-04
+operator_pulsz_bingo,Pulsz Bingo,pulszbingo.com,sweeps_casino,active,0.96,,US,,,manual_seed|blocklist_2026-04
+operator_mcluck,McLuck,mcluck.com,sweeps_casino,active,0.96,,US,,,manual_seed|blocklist_2026-04
+operator_hello_millions,Hello Millions,hellomillions.com,sweeps_casino,active,0.95,,US,,,manual_seed|blocklist_2026-04
+operator_sportzino,Sportzino,sportzino.com,sweeps_casino|sports_sweeps,active,0.95,,US,,,manual_seed|blocklist_2026-04
+operator_crown_coins,Crown Coins Casino,crowncoinscasino.com,sweeps_casino,active,0.94,,US,,,manual_seed|blocklist_2026-04
+operator_jackpota,Jackpota,jackpota.com,sweeps_casino,active,0.94,,US,,,manual_seed|blocklist_2026-04
+operator_zula,Zula Casino,zulacasino.com,sweeps_casino,active,0.94,,US,,,manual_seed|blocklist_2026-04
+operator_high5,High 5 Casino,high5casino.com,sweeps_casino|social_casino,active,0.95,,US,,,manual_seed|blocklist_2026-04
+operator_global_poker,Global Poker,globalpoker.com,sweeps_poker,active,0.95,,US,,,manual_seed|blocklist_2026-04
+operator_fortune_coins,Fortune Coins,fortunecoins.com,sweeps_casino,active,0.94,,US,,,manual_seed|blocklist_2026-04
+operator_yay,Yay Casino,yaycasino.com,sweeps_casino,inactive,0.50,,US,,Research queue: terms cited via support articles only; no official legal entity verified in seed pass—do not treat as curated,manual_seed|blocklist_2026-04|research_queue
+operator_ding_ding_ding,Ding Ding Ding,dingdingding.com,sweeps_casino,active,0.93,,US,,,manual_seed|blocklist_2026-04
+operator_spree,Spree,spree.com,sweeps_casino,active,0.92,,US,,,manual_seed|blocklist_2026-04
+operator_clubs_poker,Clubs Poker,clubs-poker.com,sweeps_poker,active,0.92,,US,,,manual_seed|blocklist_2026-04
+operator_fliff,Fliff,fliff.com,sweeps_sports|social_sports,active,0.93,,US,,,manual_seed|blocklist_2026-04
+operator_rebet,Rebet,rebet.com,sweeps_sports,active,0.90,,US,,,manual_seed|blocklist_2026-04
+operator_draftkings,DraftKings,draftkings.com,sportsbook|dfs|casino,active,0.99,,US,,,manual_seed|blocklist_2026-04
+operator_fanduel,FanDuel,fanduel.com,sportsbook|dfs|casino,active,0.99,,US,,,manual_seed|blocklist_2026-04
+operator_betmgm,BetMGM,betmgm.com,sportsbook|casino,active,0.99,,US,,,manual_seed|blocklist_2026-04
+operator_caesars,Caesars Sportsbook & Casino,caesars.com,sportsbook|casino,active,0.98,,US,,,manual_seed|blocklist_2026-04
+operator_betrivers,BetRivers,betrivers.com,sportsbook|casino,active,0.97,,US,,,manual_seed|blocklist_2026-04
+operator_points_bet,PointsBet,pointsbet.com,sportsbook,active,0.97,,US,,,manual_seed|blocklist_2026-04
+operator_bovada,Bovada,bovada.lv,sportsbook|casino,active,0.96,,US|offshore,,,manual_seed|blocklist_2026-04
+operator_ignition,Ignition Casino,ignitioncasino.eu,casino|poker,active,0.95,,US|offshore,,,manual_seed|blocklist_2026-04
+operator_mybookie,MyBookie,mybookie.ag,sportsbook|casino,active,0.94,,US|offshore,,,manual_seed|blocklist_2026-04

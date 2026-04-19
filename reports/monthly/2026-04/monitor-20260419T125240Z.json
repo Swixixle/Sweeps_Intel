@@ -1,0 +1,12 @@
+{
+  "candidates_counts": {
+    "operators_bucket": 0,
+    "promoters_bucket": 0,
+    "providers_bucket": 0
+  },
+  "generated_at": "2026-04-19T12:52:40Z",
+  "links_extracted": 0,
+  "new_unknown_domains": [],
+  "pages_checked": 0,
+  "relationships_discovered": 0
+}

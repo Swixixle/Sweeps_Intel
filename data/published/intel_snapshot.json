@@ -1,0 +1,2296 @@
+{
+  "affiliations": [
+    {
+      "evidence": [
+        {
+          "type": "shared_analytics_or_tag",
+          "value": "g-shared-intel-test",
+          "weight": 40
+        },
+        {
+          "type": "shared_cashier_pattern",
+          "value": "/cashier/deposit",
+          "weight": 15
+        }
+      ],
+      "generated_at": "2026-04-19T13:01:58Z",
+      "label": "strong_affiliation",
+      "left_id": "operator_chumba",
+      "right_id": "operator_luckyland",
+      "score": 55
+    },
+    {
+      "evidence": [
+        {
+          "type": "shared_provider",
+          "value": "pragmatic play",
+          "weight": 20
+        }
+      ],
+      "generated_at": "2026-04-19T13:01:58Z",
+      "label": "weak_signal",
+      "left_id": "operator_chumba",
+      "right_id": "provider_pragmatic_play",
+      "score": 20
+    }
+  ],
+  "entities": [
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino",
+        "social_casino"
+      ],
+      "confidence": 0.98,
+      "domains": [
+        "chumbacasino.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_chumba",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Chumba Casino",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.98,
+      "domains": [
+        "luckylandslots.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_luckyland",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "LuckyLand Slots",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino",
+        "crypto_sweeps"
+      ],
+      "confidence": 0.97,
+      "domains": [
+        "stake.us"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_stake_us",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Stake.us",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.97,
+      "domains": [
+        "wowvegas.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_wow_vegas",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "WOW Vegas",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.97,
+      "domains": [
+        "pulsz.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_pulsz",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Pulsz",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.96,
+      "domains": [
+        "pulszbingo.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_pulsz_bingo",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Pulsz Bingo",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.96,
+      "domains": [
+        "mcluck.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_mcluck",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "McLuck",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.95,
+      "domains": [
+        "hellomillions.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_hello_millions",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Hello Millions",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino",
+        "sports_sweeps"
+      ],
+      "confidence": 0.95,
+      "domains": [
+        "sportzino.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_sportzino",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Sportzino",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.94,
+      "domains": [
+        "crowncoinscasino.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_crown_coins",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Crown Coins Casino",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.94,
+      "domains": [
+        "jackpota.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_jackpota",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Jackpota",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.94,
+      "domains": [
+        "zulacasino.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_zula",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Zula Casino",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino",
+        "social_casino"
+      ],
+      "confidence": 0.95,
+      "domains": [
+        "high5casino.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_high5",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "High 5 Casino",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_poker"
+      ],
+      "confidence": 0.95,
+      "domains": [
+        "globalpoker.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_global_poker",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Global Poker",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.94,
+      "domains": [
+        "fortunecoins.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_fortune_coins",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Fortune Coins",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.93,
+      "domains": [
+        "yaycasino.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_yay",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Yay Casino",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.93,
+      "domains": [
+        "dingdingding.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_ding_ding_ding",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Ding Ding Ding",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.92,
+      "domains": [
+        "spree.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_spree",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Spree",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_poker"
+      ],
+      "confidence": 0.92,
+      "domains": [
+        "clubs-poker.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_clubs_poker",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Clubs Poker",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_sports",
+        "social_sports"
+      ],
+      "confidence": 0.93,
+      "domains": [
+        "fliff.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_fliff",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Fliff",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_sports"
+      ],
+      "confidence": 0.9,
+      "domains": [
+        "rebet.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_rebet",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Rebet",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sportsbook",
+        "dfs",
+        "casino"
+      ],
+      "confidence": 0.99,
+      "domains": [
+        "draftkings.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_draftkings",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "DraftKings",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sportsbook",
+        "dfs",
+        "casino"
+      ],
+      "confidence": 0.99,
+      "domains": [
+        "fanduel.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_fanduel",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "FanDuel",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sportsbook",
+        "casino"
+      ],
+      "confidence": 0.99,
+      "domains": [
+        "betmgm.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_betmgm",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "BetMGM",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sportsbook",
+        "casino"
+      ],
+      "confidence": 0.98,
+      "domains": [
+        "caesars.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_caesars",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Caesars Sportsbook & Casino",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sportsbook",
+        "casino"
+      ],
+      "confidence": 0.97,
+      "domains": [
+        "betrivers.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_betrivers",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "BetRivers",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sportsbook"
+      ],
+      "confidence": 0.97,
+      "domains": [
+        "pointsbet.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_points_bet",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "PointsBet",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US",
+          "offshore"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sportsbook",
+        "casino"
+      ],
+      "confidence": 0.96,
+      "domains": [
+        "bovada.lv"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_bovada",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Bovada",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US",
+          "offshore"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "casino",
+        "poker"
+      ],
+      "confidence": 0.95,
+      "domains": [
+        "ignitioncasino.eu"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_ignition",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Ignition Casino",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US",
+          "offshore"
+        ],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sportsbook",
+        "casino"
+      ],
+      "confidence": 0.94,
+      "domains": [
+        "mybookie.ag"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "operator_mybookie",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "MyBookie",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": false,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "promoter_type": "affiliate_directory",
+        "promotes_categories": [
+          "sweeps_casino",
+          "social_casino"
+        ]
+      },
+      "categories": [
+        "sweeps_casino",
+        "social_casino"
+      ],
+      "confidence": 0.35,
+      "domains": [
+        "pending-promoter-01.invalid"
+      ],
+      "entity_type": "promoter",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "promoter_manual_001",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "REPLACE promoter display name",
+      "notes": "Swap placeholder for real domains when curated",
+      "sources": [
+        "manual_seed"
+      ],
+      "status": "inactive"
+    },
+    {
+      "attributes": {
+        "blockable": false,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "promoter_type": "comparison_site",
+        "promotes_categories": [
+          "sweeps_casino"
+        ]
+      },
+      "categories": [
+        "sweeps_casino"
+      ],
+      "confidence": 0.35,
+      "domains": [
+        "pending-promoter-02.invalid"
+      ],
+      "entity_type": "promoter",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "promoter_manual_002",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "REPLACE second promoter",
+      "notes": "Use for known promo funnels; leave inactive until curated",
+      "sources": [
+        "manual_seed"
+      ],
+      "status": "inactive"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "provider_type": "game_studio"
+      },
+      "categories": [],
+      "confidence": 0.95,
+      "domains": [
+        "pragmaticplay.com"
+      ],
+      "entity_type": "provider",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "provider_pragmatic_play",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Pragmatic Play",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "provider_type": "game_studio"
+      },
+      "categories": [],
+      "confidence": 0.93,
+      "domains": [
+        "bgaming-network.com"
+      ],
+      "entity_type": "provider",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "provider_bgaming",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "BGaming",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "provider_type": "game_studio"
+      },
+      "categories": [],
+      "confidence": 0.92,
+      "domains": [
+        "playson.com"
+      ],
+      "entity_type": "provider",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "provider_playson",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "Playson",
+      "notes": "",
+      "sources": [
+        "manual_seed",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "domain_or_pattern": "pending-payment-01.invalid",
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "path_patterns": [],
+        "payment_type": "kyc_wallet"
+      },
+      "categories": [],
+      "confidence": 0.4,
+      "domains": [
+        "pending-payment-01.invalid"
+      ],
+      "entity_type": "payment_path",
+      "first_seen": "2026-04-19T13:01:58Z",
+      "id": "payment_manual_001",
+      "last_seen": "2026-04-19T13:01:58Z",
+      "name": "REPLACE cashier or wallet brand",
+      "notes": "Replace placeholder domain when curated",
+      "sources": [
+        "manual_seed"
+      ],
+      "status": "inactive"
+    }
+  ],
+  "fingerprints": [
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_betmgm",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_betrivers",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_bovada",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_caesars",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [
+          "Example Holdings Intel Test LLC"
+        ],
+        "provider_mentions": [
+          "Pragmatic Play"
+        ],
+        "title_terms": []
+      },
+      "entity_id": "operator_chumba",
+      "flow": {
+        "cashier_paths": [
+          "/cashier/deposit"
+        ],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [
+          "/redeem"
+        ],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [
+          "g-shared-intel-test"
+        ],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_clubs_poker",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_crown_coins",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_ding_ding_ding",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_draftkings",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_fanduel",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_fliff",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_fortune_coins",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_global_poker",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_hello_millions",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_high5",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_ignition",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_jackpota",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [
+          "Example Holdings Intel Test LLC"
+        ],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_luckyland",
+      "flow": {
+        "cashier_paths": [
+          "/cashier/deposit"
+        ],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [
+          "g-shared-intel-test"
+        ],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_mcluck",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_mybookie",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_points_bet",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_pulsz",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_pulsz_bingo",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_rebet",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_sportzino",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_spree",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_stake_us",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_wow_vegas",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_yay",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "operator_zula",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "payment_manual_001",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "promoter_manual_001",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "promoter_manual_002",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "provider_bgaming",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "provider_playson",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "provider_pragmatic_play",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    }
+  ],
+  "generated_at": "2026-04-19T13:01:58Z",
+  "relationships": []
+}

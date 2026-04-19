@@ -1,0 +1,1369 @@
+[
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US",
+        "Canada",
+        "Malta"
+      ],
+      "legal_entity": "VGW Malta Limited|VGW Games Limited",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino",
+      "social_casino"
+    ],
+    "confidence": 0.99,
+    "domains": [
+      "chumbacasino.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_chumba",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Chumba Casino",
+    "notes": "Official site: operated by VGW Malta Limited; sweepstakes sponsor/promoter VGW Games Limited per rules",
+    "sources": [
+      "official_site",
+      "terms",
+      "sweeps_rules",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "VGW|VGW Group",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino",
+      "social_casino"
+    ],
+    "confidence": 0.95,
+    "domains": [
+      "luckylandslots.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_luckyland",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "LuckyLand Slots",
+    "notes": "Privacy/terms cite VGW; some legal pages returned access denied on retrieval",
+    "sources": [
+      "official_site",
+      "privacy",
+      "faq",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US",
+        "Cyprus"
+      ],
+      "legal_entity": "Sweepsteaks Limited",
+      "provider_names": [
+        "Pragmatic Play",
+        "ICONIC21",
+        "Animo Studios"
+      ]
+    },
+    "categories": [
+      "sweeps_casino",
+      "social_casino"
+    ],
+    "confidence": 0.99,
+    "domains": [
+      "stake.us"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_stake_us",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Stake.us",
+    "notes": "Terms: Sweepsteaks Limited Cyprus HE436222",
+    "sources": [
+      "official_terms",
+      "provider_pages",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "Gibraltar"
+      ],
+      "legal_entity": "MW Services Limited",
+      "provider_names": []
+    },
+    "categories": [
+      "social_casino",
+      "sweeps_casino"
+    ],
+    "confidence": 0.98,
+    "domains": [
+      "wowvegas.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_wow_vegas",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "WOW Vegas",
+    "notes": "FAQ/affiliate terms: MW Services Limited Gibraltar no. 120828",
+    "sources": [
+      "official_site",
+      "faq",
+      "affiliate_terms",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "Belize"
+      ],
+      "legal_entity": "Twocent Technology Limited",
+      "provider_names": []
+    },
+    "categories": [
+      "crypto_casino",
+      "sportsbook"
+    ],
+    "confidence": 0.99,
+    "domains": [
+      "bc.game"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_bc_game",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "BC.GAME",
+    "notes": "Official site: operated by Twocent Technology Limited (Belize registration 41939)",
+    "sources": [
+      "official_site",
+      "terms",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino",
+      "social_casino"
+    ],
+    "confidence": 0.97,
+    "domains": [
+      "sidepot.us"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_sidepot",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Sidepot",
+    "notes": "Official site and terms verify sweeps/social-casino structure; legal entity not confirmed in this pass",
+    "sources": [
+      "official_site",
+      "terms",
+      "sweepstakes_rules",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "My Technology, Inc.",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino",
+      "social_casino"
+    ],
+    "confidence": 0.99,
+    "domains": [
+      "myprize.us"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_myprize_us",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "MyPrize.US",
+    "notes": "Official terms identify My Technology Inc.; site/rules confirm Gold Coins and Sweeps Cash structure",
+    "sources": [
+      "official_site",
+      "terms",
+      "sweepstakes_rules",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "Yotta Technologies Inc.",
+      "provider_names": []
+    },
+    "categories": [
+      "sweepstakes_platform",
+      "social_gaming"
+    ],
+    "confidence": 0.99,
+    "domains": [
+      "withyotta.com",
+      "games.withyotta.com",
+      "banking.withyotta.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_yotta",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Yotta",
+    "notes": "Official site and terms: Yotta Technologies Inc.; Token Games vs Sweepstakes and YottaCash",
+    "sources": [
+      "official_site",
+      "terms",
+      "sweepstakes_rules",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "Global"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "social_casino",
+      "free_to_play_casino"
+    ],
+    "confidence": 0.93,
+    "domains": [
+      "huuugegames.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_huuuge_casino",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Huuuge Casino",
+    "notes": "Free-to-play social casino product; legal entity not confirmed in this pass. Canonical product path /huuuge-casino.",
+    "sources": [
+      "official_site",
+      "game_page",
+      "eula",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "Global"
+      ],
+      "legal_entity": "",
+      "provider_names": [
+        "Fire Kirin"
+      ]
+    },
+    "categories": [
+      "fish_game_platform",
+      "skill_game_platform"
+    ],
+    "confidence": 0.94,
+    "domains": [
+      "pandamaster.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_panda_master",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Panda Master",
+    "notes": "Official site: new software from the makers of Fire Kirin",
+    "sources": [
+      "official_site",
+      "menu_page",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweepstakes_gaming",
+      "fish_game_platform"
+    ],
+    "confidence": 0.8,
+    "domains": [
+      "firekirin.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_fire_kirin",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Fire Kirin",
+    "notes": "Official pages describe sweepstakes/fish-game platform; legal entity not confirmed in this pass",
+    "sources": [
+      "official_site",
+      "contact_page",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sports_trading",
+      "prediction_market"
+    ],
+    "confidence": 0.85,
+    "domains": [
+      "novig.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_novig",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Novig",
+    "notes": "Official site: sports trading / prediction-market positioning; legal entity not confirmed in this pass",
+    "sources": [
+      "official_site",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.97,
+    "domains": [
+      "pulsz.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_pulsz",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Pulsz",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.96,
+    "domains": [
+      "pulszbingo.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_pulsz_bingo",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Pulsz Bingo",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.96,
+    "domains": [
+      "mcluck.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_mcluck",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "McLuck",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.95,
+    "domains": [
+      "hellomillions.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_hello_millions",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Hello Millions",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino",
+      "sports_sweeps"
+    ],
+    "confidence": 0.95,
+    "domains": [
+      "sportzino.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_sportzino",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Sportzino",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.94,
+    "domains": [
+      "crowncoinscasino.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_crown_coins",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Crown Coins Casino",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.94,
+    "domains": [
+      "jackpota.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_jackpota",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Jackpota",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.94,
+    "domains": [
+      "zulacasino.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_zula",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Zula Casino",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino",
+      "social_casino"
+    ],
+    "confidence": 0.95,
+    "domains": [
+      "high5casino.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_high5",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "High 5 Casino",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_poker"
+    ],
+    "confidence": 0.95,
+    "domains": [
+      "globalpoker.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_global_poker",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Global Poker",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.94,
+    "domains": [
+      "fortunecoins.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_fortune_coins",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Fortune Coins",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.5,
+    "domains": [
+      "yaycasino.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_yay",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Yay Casino",
+    "notes": "Research queue: terms cited via support articles only; no official legal entity verified in seed pass\u2014do not treat as curated",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04",
+      "research_queue"
+    ],
+    "status": "inactive"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.93,
+    "domains": [
+      "dingdingding.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_ding_ding_ding",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Ding Ding Ding",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.92,
+    "domains": [
+      "spree.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_spree",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Spree",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_poker"
+    ],
+    "confidence": 0.92,
+    "domains": [
+      "clubs-poker.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_clubs_poker",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Clubs Poker",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_sports",
+      "social_sports"
+    ],
+    "confidence": 0.93,
+    "domains": [
+      "fliff.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_fliff",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Fliff",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sweeps_sports"
+    ],
+    "confidence": 0.9,
+    "domains": [
+      "rebet.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_rebet",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Rebet",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sportsbook",
+      "dfs",
+      "casino"
+    ],
+    "confidence": 0.99,
+    "domains": [
+      "draftkings.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_draftkings",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "DraftKings",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sportsbook",
+      "dfs",
+      "casino"
+    ],
+    "confidence": 0.99,
+    "domains": [
+      "fanduel.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_fanduel",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "FanDuel",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sportsbook",
+      "casino"
+    ],
+    "confidence": 0.99,
+    "domains": [
+      "betmgm.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_betmgm",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "BetMGM",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sportsbook",
+      "casino"
+    ],
+    "confidence": 0.98,
+    "domains": [
+      "caesars.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_caesars",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Caesars Sportsbook & Casino",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sportsbook",
+      "casino"
+    ],
+    "confidence": 0.97,
+    "domains": [
+      "betrivers.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_betrivers",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "BetRivers",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sportsbook"
+    ],
+    "confidence": 0.97,
+    "domains": [
+      "pointsbet.com"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_points_bet",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "PointsBet",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US",
+        "offshore"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sportsbook",
+      "casino"
+    ],
+    "confidence": 0.96,
+    "domains": [
+      "bovada.lv"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_bovada",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Bovada",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US",
+        "offshore"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "casino",
+      "poker"
+    ],
+    "confidence": 0.95,
+    "domains": [
+      "ignitioncasino.eu"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_ignition",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Ignition Casino",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "evidence_only": false,
+      "jurisdictions": [
+        "US",
+        "offshore"
+      ],
+      "legal_entity": "",
+      "provider_names": []
+    },
+    "categories": [
+      "sportsbook",
+      "casino"
+    ],
+    "confidence": 0.94,
+    "domains": [
+      "mybookie.ag"
+    ],
+    "entity_type": "operator",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "operator_mybookie",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "MyBookie",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": false,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "promoter_type": "affiliate_directory",
+      "promotes_categories": [
+        "sweeps_casino",
+        "social_casino"
+      ]
+    },
+    "categories": [
+      "sweeps_casino",
+      "social_casino"
+    ],
+    "confidence": 0.35,
+    "domains": [
+      "pending-promoter-01.invalid"
+    ],
+    "entity_type": "promoter",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "promoter_manual_001",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "REPLACE promoter display name",
+    "notes": "Swap placeholder for real domains when curated",
+    "sources": [
+      "manual_seed"
+    ],
+    "status": "inactive"
+  },
+  {
+    "attributes": {
+      "blockable": false,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "promoter_type": "comparison_site",
+      "promotes_categories": [
+        "sweeps_casino"
+      ]
+    },
+    "categories": [
+      "sweeps_casino"
+    ],
+    "confidence": 0.35,
+    "domains": [
+      "pending-promoter-02.invalid"
+    ],
+    "entity_type": "promoter",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "promoter_manual_002",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "REPLACE second promoter",
+    "notes": "Use for known promo funnels; leave inactive until curated",
+    "sources": [
+      "manual_seed"
+    ],
+    "status": "inactive"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "domains_pending_verification": false,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "provider_type": "game_studio"
+    },
+    "categories": [],
+    "confidence": 0.95,
+    "domains": [
+      "pragmaticplay.com"
+    ],
+    "entity_type": "provider",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "provider_pragmatic_play",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Pragmatic Play",
+    "notes": "Verified Stake.us provider hub",
+    "sources": [
+      "official_provider_page",
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "domains_pending_verification": false,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "provider_type": "game_studio"
+    },
+    "categories": [],
+    "confidence": 0.93,
+    "domains": [
+      "bgaming-network.com"
+    ],
+    "entity_type": "provider",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "provider_bgaming",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "BGaming",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "domains_pending_verification": false,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "provider_type": "game_studio"
+    },
+    "categories": [],
+    "confidence": 0.92,
+    "domains": [
+      "playson.com"
+    ],
+    "entity_type": "provider",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "provider_playson",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Playson",
+    "notes": "",
+    "sources": [
+      "manual_seed",
+      "blocklist_2026-04"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": false,
+      "domains_pending_verification": true,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "provider_type": "game_studio"
+    },
+    "categories": [],
+    "confidence": 0.85,
+    "domains": [],
+    "entity_type": "provider",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "provider_iconic21",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "ICONIC21",
+    "notes": "Domain unverified; Stake.us official provider page",
+    "sources": [
+      "official_provider_page"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": false,
+      "domains_pending_verification": true,
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "provider_type": "game_studio"
+    },
+    "categories": [],
+    "confidence": 0.75,
+    "domains": [],
+    "entity_type": "provider",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "provider_animo_studios",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "Animo Studios",
+    "notes": "Domain unverified; Stake.us official game page",
+    "sources": [
+      "official_game_page"
+    ],
+    "status": "active"
+  },
+  {
+    "attributes": {
+      "blockable": true,
+      "domain_or_pattern": "pending-payment-01.invalid",
+      "evidence_only": false,
+      "jurisdictions": [],
+      "legal_entity": "",
+      "path_patterns": [],
+      "payment_type": "kyc_wallet"
+    },
+    "categories": [],
+    "confidence": 0.4,
+    "domains": [
+      "pending-payment-01.invalid"
+    ],
+    "entity_type": "payment_path",
+    "first_seen": "2026-04-19T13:18:23Z",
+    "id": "payment_manual_001",
+    "last_seen": "2026-04-19T13:18:23Z",
+    "name": "REPLACE cashier or wallet brand",
+    "notes": "Replace placeholder domain when curated",
+    "sources": [
+      "manual_seed"
+    ],
+    "status": "inactive"
+  }
+]

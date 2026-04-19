@@ -1,0 +1,3 @@
+id,name,domain,promoter_type,status,confidence,promotes_categories,notes,sources
+promoter_manual_001,REPLACE promoter display name,pending-promoter-01.invalid,affiliate_directory,inactive,0.35,sweeps_casino|social_casino,Swap placeholder for real domains when curated,manual_seed
+promoter_manual_002,REPLACE second promoter,pending-promoter-02.invalid,comparison_site,inactive,0.35,sweeps_casino,Use for known promo funnels; leave inactive until curated,manual_seed
