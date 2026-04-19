@@ -74,10 +74,11 @@ def domains_for_decision(
     st = str(decision.get("source_type") or "")
     out: list[str] = []
 
-    if rid.startswith("queue:discovered_domain:"):
-        dom = rid.split(":", 2)[2] if rid.count(":") >= 2 else ""
-        if dom:
-            out.append(_norm_domain(dom))
+    if rid.startswith("queue:"):
+        rest = rid[6:]
+        subkind, _, dom_rest = rest.partition(":")
+        if subkind in ("discovered_domain", "extracted_fingerprint") and dom_rest.strip():
+            out.append(_norm_domain(dom_rest.strip()))
         return out
 
     if st == "cluster":

@@ -205,6 +205,100 @@ class TestClusterRecommendation(unittest.TestCase):
         self.assertEqual(d["cluster_recommendation"], "attach_to_existing_cluster")
 
 
+class TestTightenedBlockRules(unittest.TestCase):
+    def test_confirmed_catalog_operator_block_now_even_inferred(self) -> None:
+        ent = {
+            "candidate_id": "seedop",
+            "domain": "chumbacasino.com",
+            "legal_entity": "",
+            "parent_company": "",
+            "notes": "",
+            "sources": "https://www.chumbacasino.com/",
+            "evidence_tier": "inferred_or_unverified",
+            "raw_row": {},
+        }
+        d = decision_for_staged_entity(
+            ent,
+            {},
+            norm_index=_minimal_norm_index(),
+            staged_clusters=[],
+            rel_promotes={},
+            rel_uses_provider={},
+            confirmed_operator_domains=frozenset({"chumbacasino.com"}),
+        )
+        self.assertEqual(d["likely_entity_type"], "operator")
+        self.assertEqual(d["block_recommendation"], "block_now")
+        self.assertIn("rule:block_now_confirmed_operator_seed_or_catalog", d["reasoning"])
+
+    def test_redirect_shell_inferred_operator_block_now_with_strong_signals(self) -> None:
+        ent = {
+            "candidate_id": "sh",
+            "domain": "shell.example",
+            "legal_entity": "",
+            "parent_company": "",
+            "notes": "Rebrand redirect; gold coins and sweeps coins games.",
+            "sources": "",
+            "evidence_tier": "inferred_or_unverified",
+            "raw_row": {},
+        }
+        d = decision_for_staged_entity(
+            ent,
+            {},
+            norm_index=_minimal_norm_index(),
+            staged_clusters=[],
+            rel_promotes={},
+            rel_uses_provider={},
+            confirmed_operator_domains=frozenset(),
+        )
+        self.assertEqual(d["likely_entity_type"], "operator")
+        self.assertEqual(d["block_recommendation"], "block_now")
+        self.assertIn("rule:block_now_redirect_shell_operator", d["reasoning"])
+
+    def test_promoter_stays_do_not_block(self) -> None:
+        ent = {
+            "candidate_id": "pr",
+            "domain": "reviews.example",
+            "legal_entity": "",
+            "parent_company": "",
+            "notes": "Top sweeps comparison site; affiliate links and bonus guide.",
+            "sources": "",
+            "evidence_tier": "first_party_verified",
+            "raw_row": {},
+        }
+        d = decision_for_staged_entity(
+            ent,
+            {},
+            norm_index=_minimal_norm_index(),
+            staged_clusters=[],
+            rel_promotes={},
+            rel_uses_provider={},
+        )
+        self.assertEqual(d["likely_entity_type"], "promoter")
+        self.assertEqual(d["block_recommendation"], "do_not_block")
+
+    def test_provider_stays_do_not_block(self) -> None:
+        ent = {
+            "candidate_id": "pv",
+            "domain": "studio.example",
+            "legal_entity": "Studio AG",
+            "parent_company": "",
+            "notes": "Slot studio and game provider for operators.",
+            "sources": "",
+            "evidence_tier": "first_party_verified",
+            "raw_row": {"entity_type": "provider", "provider_type": "studio"},
+        }
+        d = decision_for_staged_entity(
+            ent,
+            {},
+            norm_index=_minimal_norm_index(),
+            staged_clusters=[],
+            rel_promotes={},
+            rel_uses_provider={},
+        )
+        self.assertEqual(d["likely_entity_type"], "provider")
+        self.assertEqual(d["block_recommendation"], "do_not_block")
+
+
 class TestBlockRecommendation(unittest.TestCase):
     def test_redirect_shell_operator_first_party_block_now(self) -> None:
         ent = {

@@ -7,6 +7,7 @@ Does not modify production schemas, affiliations scoring, or seeds.
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 from collections import defaultdict
@@ -27,6 +28,12 @@ OPERATOR_TERMS: tuple[str, ...] = (
     "poker",
     "sweepstakes game",
     "fish game",
+    "gold coins",
+    "sweeps coins",
+    "sweeps cash",
+    "no purchase necessary",
+    "redeem",
+    "cash prizes",
 )
 PROMOTER_TERMS: tuple[str, ...] = (
     "best casinos",
@@ -97,6 +104,115 @@ def _norm_key(s: str | None) -> str:
     if not s or not isinstance(s, str):
         return ""
     return " ".join(s.lower().split()).strip()
+
+
+def _domain_key(host: str | None) -> str:
+    if not host or not str(host).strip():
+        return ""
+    d = str(host).strip().lower().rstrip(".")
+    if "/" in d:
+        d = d.split("/", 1)[0]
+    if d.startswith("www."):
+        d = d[4:]
+    return d
+
+
+def _hosts_from_seed_domain_cell(cell: str) -> list[str]:
+    out: list[str] = []
+    for seg in str(cell or "").split("|"):
+        s = seg.strip()
+        if not s:
+            continue
+        h = _domain_key(s.split("/", 1)[0])
+        if h:
+            out.append(h)
+    return out
+
+
+def _load_confirmed_operator_domains(repo_root: Path, norm_ents: list[Any]) -> frozenset[str]:
+    """Active operator hostnames from seeds CSV and normalized entities."""
+    confirmed: set[str] = set()
+    csv_path = repo_root / "data" / "seeds" / "operators.csv"
+    if csv_path.is_file():
+        with csv_path.open(encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f):
+                st = (row.get("status") or "active").strip().lower()
+                if st in ("inactive", "deprecated", "unknown"):
+                    continue
+                for h in _hosts_from_seed_domain_cell(row.get("domain") or ""):
+                    confirmed.add(h)
+    for e in norm_ents:
+        if not isinstance(e, dict):
+            continue
+        if str(e.get("entity_type") or "") != "operator":
+            continue
+        st = str(e.get("status") or "active").strip().lower()
+        if st in ("inactive", "deprecated"):
+            continue
+        for d in e.get("domains") or []:
+            if isinstance(d, str) and d.strip():
+                k = _domain_key(d)
+                if k:
+                    confirmed.add(k)
+    return frozenset(confirmed)
+
+
+def _index_extracted_fingerprints_by_domain(path: Path) -> dict[str, dict[str, Any]]:
+    doc = _load_json(path)
+    out: dict[str, dict[str, Any]] = {}
+    if not isinstance(doc, dict):
+        return out
+    for fp in doc.get("fingerprints") or []:
+        if isinstance(fp, dict) and fp.get("domain"):
+            out[_domain_key(str(fp["domain"]))] = fp
+    return out
+
+
+def _fingerprint_text_blob(fp_rec: dict[str, Any]) -> str:
+    inner = fp_rec.get("fingerprint") if isinstance(fp_rec.get("fingerprint"), dict) else fp_rec
+    if not isinstance(inner, dict):
+        return ""
+    content = inner.get("content") or {}
+    flow = inner.get("flow") or {}
+    return _norm_blob(
+        " ".join(content.get("title_terms") or []),
+        " ".join(content.get("footer_phrases") or []),
+        " ".join(content.get("bonus_terms") or []),
+        " ".join(flow.get("cashier_paths") or []),
+        " ".join(flow.get("redemption_paths") or []),
+    )
+
+
+def _domain_cluster_touches_confirmed(
+    domain: str,
+    staged_clusters: list[dict[str, Any]],
+    confirmed_operator_domains: frozenset[str],
+) -> bool:
+    d = _domain_key(domain)
+    if not d:
+        return False
+    for cl in staged_clusters:
+        members = [_domain_key(str(m)) for m in (cl.get("members") or []) if m]
+        if d not in members:
+            continue
+        if any(m in confirmed_operator_domains for m in members if m):
+            return True
+    return False
+
+
+def _redirect_shell_from_notes(notes: str, sources: str, extra_blob: str = "") -> bool:
+    b = _norm_blob(notes, sources, extra_blob)
+    return any(
+        x in b
+        for x in (
+            "redirect",
+            "rebrand",
+            "formerly ",
+            "previously ",
+            "moved to",
+            "now at",
+        )
+    )
 
 
 def _expand_legal_keys(legal: str) -> set[str]:
@@ -441,35 +557,64 @@ def _block_recommendation(
     field_conf: dict[str, str],
     redirect_shell: bool,
     evidence_only_provider: bool,
+    confirmed_operator_domain: bool,
+    cluster_touches_confirmed_operator: bool,
+    operator_term_hits: int,
 ) -> tuple[str, list[str]]:
     r: list[str] = []
     tier = tier or ""
     highish = field_conf.get("legal_entity") == "high" or tier == "first_party_verified"
+    ok_secondary = tier == "secondary_corroborated"
 
     if evidence_only_provider and likely_type == "provider":
         r.append("rule:block_do_not_evidence_only_provider")
         return "do_not_block", r
 
-    if likely_type == "operator" and highish and tier == "first_party_verified":
+    # Conservative: do not auto-block promoter / provider domains from this layer.
+    if likely_type == "promoter":
+        r.append("rule:block_do_not_promoter_listing_domain")
+        return "do_not_block", r
+
+    if likely_type == "provider":
+        r.append("rule:block_do_not_provider_studio_domain")
+        return "do_not_block", r
+
+    if confirmed_operator_domain:
+        r.append("rule:block_now_confirmed_operator_seed_or_catalog")
+        return "block_now", r
+
+    if likely_type == "operator" and tier == "first_party_verified":
         if redirect_shell:
             r.append("rule:block_now_redirect_shell_operator")
         r.append("rule:block_now_operator_first_party")
         return "block_now", r
 
-    if redirect_shell and likely_type == "operator" and highish:
+    if (
+        redirect_shell
+        and likely_type == "operator"
+        and (highish or ok_secondary or operator_term_hits >= 2)
+    ):
         r.append("rule:block_now_redirect_shell_operator")
         return "block_now", r
 
+    if redirect_shell and likely_type == "operator":
+        r.append("rule:block_after_review_redirect_shell_operator")
+        return "block_after_review", r
+
+    if likely_type == "operator" and cluster_touches_confirmed_operator:
+        r.append("rule:block_after_review_operator_cluster_known_family")
+        return "block_after_review", r
+
+    if likely_type == "operator" and operator_term_hits >= 4:
+        r.append("rule:block_now_high_confidence_sweeps_operator_signals")
+        return "block_now", r
+
+    if likely_type == "operator" and operator_term_hits >= 2:
+        r.append("rule:block_after_review_operator_sweeps_signals")
+        return "block_after_review", r
+
     if likely_type == "operator":
         r.append("rule:block_after_review_operator_mixed")
-        return "block_after_review", r
-
-    if likely_type == "promoter":
-        r.append("rule:block_after_review_promoter_policy")
-        return "block_after_review", r
-
-    if likely_type == "provider":
-        r.append("rule:block_after_review_provider_policy")
         return "block_after_review", r
 
     r.append("rule:block_do_not_weak_or_unknown")
@@ -505,9 +650,12 @@ def decision_for_staged_entity(
     staged_clusters: list[dict[str, Any]],
     rel_promotes: dict[str, int],
     rel_uses_provider: dict[str, int],
+    confirmed_operator_domains: frozenset[str] | None = None,
 ) -> dict[str, Any]:
+    confirmed = confirmed_operator_domains or frozenset()
     cid = str(ent.get("candidate_id") or "")
     domain = str(ent.get("domain") or "").strip()
+    dom_key = _domain_key(domain)
     raw = ent.get("raw_row") if isinstance(ent.get("raw_row"), dict) else {}
     fp = fp_by_cid.get(cid)
 
@@ -543,9 +691,14 @@ def decision_for_staged_entity(
         has_legal_anchor=legal_present,
     )
 
+    if dom_key and dom_key in confirmed and str(raw.get("entity_type") or "").strip().lower() != "provider":
+        if likely_type != "operator":
+            type_reasoning.append("rule:confirmed_operator_catalog_override_type")
+        likely_type = "operator"
+
     op_hits = _count_term_hits(blob, OPERATOR_TERMS)
     pr_hits = _count_term_hits(blob, PROMOTER_TERMS)
-    contradictory = _contradictory_type_signals(op_hits, pr_hits)
+    contradictory = _contradictory_type_signals(op_hits, pr_hits) and dom_key not in confirmed
 
     tier = str(ent.get("evidence_tier") or "")
     fc = _field_confidence_entity(ent, fp, tier=tier)
@@ -580,15 +733,23 @@ def decision_for_staged_entity(
     )
 
     notes_l = str(ent.get("notes") or "").lower()
-    redirect_shell = "redirect" in notes_l or "rebrand" in notes_l
+    redirect_shell = _redirect_shell_from_notes(
+        str(ent.get("notes") or ""),
+        str(ent.get("sources") or ""),
+        blob,
+    )
 
     evidence_only = "evidence_only" in notes_l or "evidence only" in notes_l
+    cluster_touch = _domain_cluster_touches_confirmed(domain, staged_clusters, confirmed)
     blk, blk_reasoning = _block_recommendation(
         likely_type=likely_type,
         tier=tier,
         field_conf=fc,
         redirect_shell=redirect_shell,
         evidence_only_provider=evidence_only,
+        confirmed_operator_domain=bool(dom_key and dom_key in confirmed),
+        cluster_touches_confirmed_operator=cluster_touch,
+        operator_term_hits=op_hits,
     )
 
     reasoning = (
@@ -688,9 +849,16 @@ def decision_for_relationship(rel: dict[str, Any], idx: int) -> dict[str, Any]:
     }
 
 
-def decision_for_cluster(cl: dict[str, Any], norm_index: dict[str, Any]) -> dict[str, Any]:
+def decision_for_cluster(
+    cl: dict[str, Any],
+    norm_index: dict[str, Any],
+    *,
+    confirmed_operator_domains: frozenset[str] | None = None,
+) -> dict[str, Any]:
+    confirmed = confirmed_operator_domains or frozenset()
     cid = str(cl.get("cluster_id") or "")
-    members = [str(m).lower().strip() for m in (cl.get("members") or [])]
+    members_raw = [str(m).lower().strip() for m in (cl.get("members") or [])]
+    members = [_domain_key(m) for m in members_raw if m]
     prod = set(norm_index["domain_to_id"].keys())
     reasoning: list[str] = []
     if any(m in prod for m in members):
@@ -699,6 +867,15 @@ def decision_for_cluster(cl: dict[str, Any], norm_index: dict[str, Any]) -> dict
     else:
         cluster_rec = "create_new_cluster_candidate"
         reasoning.append("rule:cluster_doc_staged_only_members")
+
+    family_hit = any(m in confirmed for m in members) or any(m in prod for m in members)
+    if family_hit:
+        blk = "block_after_review"
+        reasoning.append("rule:cluster_block_after_review_operator_family")
+    else:
+        blk = "do_not_block"
+        reasoning.append("rule:cluster_block_not_operator_family")
+
     return {
         "record_id": cid or "unknown_cluster",
         "source_type": "cluster",
@@ -706,37 +883,111 @@ def decision_for_cluster(cl: dict[str, Any], norm_index: dict[str, Any]) -> dict
         "field_confidence": {"cluster_evidence": _tier_base_level(str(cl.get("evidence_tier") or "inferred"))},
         "promotion_recommendation": "stage_only",
         "cluster_recommendation": cluster_rec,
-        "block_recommendation": "do_not_block",
+        "block_recommendation": blk,
         "reasoning": reasoning,
     }
 
 
-def decision_for_review_queue_item(item: dict[str, Any]) -> dict[str, Any] | None:
+def decision_for_review_queue_item(
+    item: dict[str, Any],
+    *,
+    norm_index: dict[str, Any],
+    confirmed_operator_domains: frozenset[str] | None = None,
+    staged_clusters: list[dict[str, Any]] | None = None,
+    extracted_by_domain: dict[str, dict[str, Any]] | None = None,
+) -> dict[str, Any] | None:
+    confirmed = confirmed_operator_domains or frozenset()
+    clusters = staged_clusters or []
+    ext = extracted_by_domain or {}
     kind = str(item.get("kind") or "")
     iid = str(item.get("id") or "")
     if not iid:
         return None
+    if kind not in ("discovered_domain", "extracted_fingerprint"):
+        return None
+
+    domain = _domain_key(iid)
+    pref = item.get("payload_ref") if isinstance(item.get("payload_ref"), dict) else {}
+    pd = pref.get("domain") if pref.get("domain") else None
+    if pd:
+        domain = _domain_key(str(pd))
+    if not domain:
+        return None
+
     tier = str(item.get("evidence_tier") or "")
     base = _tier_base_level(tier)
-    if kind == "discovered_domain":
-        domain = iid.lower().strip()
-        blob = _norm_blob(str(item.get("notes") or ""), str(item.get("sources") or ""))
-        lt, tr = _infer_likely_entity_type(blob, {}, promotes_count=0, uses_provider_count=0, domain=domain)
-        prom = "reject_for_now" if _placeholder_domain(domain) else "stage_only"
-        pr = ["rule:queue_discovered_domain_stage"]
-        if prom == "reject_for_now":
-            pr = ["rule:queue_discovered_reject_placeholder"]
-        return {
-            "record_id": f"queue:{kind}:{iid}",
-            "source_type": "entity",
-            "likely_entity_type": lt,
-            "field_confidence": {"domain": base},
-            "promotion_recommendation": prom,
-            "cluster_recommendation": "no_cluster_action",
-            "block_recommendation": "do_not_block",
-            "reasoning": tr + pr,
-        }
-    return None
+    src_blob = _norm_blob(str(item.get("notes") or ""), str(item.get("sources") or ""))
+    fp_blob = _fingerprint_text_blob(ext.get(domain, {}))
+    blob = _norm_blob(src_blob, fp_blob)
+
+    lt, tr = _infer_likely_entity_type(
+        blob, {}, promotes_count=0, uses_provider_count=0, domain=domain, has_legal_anchor=False
+    )
+    if domain in confirmed:
+        if lt != "operator":
+            tr = tr + ["rule:confirmed_operator_catalog_override_type"]
+        lt = "operator"
+
+    op_hits = _count_term_hits(blob, OPERATOR_TERMS)
+    pr_hits = _count_term_hits(blob, PROMOTER_TERMS)
+    contradictory = _contradictory_type_signals(op_hits, pr_hits) and domain not in confirmed
+
+    cluster_rec, cluster_rs = _cluster_recommendation_for_domain(
+        domain=domain,
+        legal="",
+        parent="",
+        company_number="",
+        norm_index=norm_index,
+        staged_clusters=clusters,
+    )
+
+    redirect_shell = _redirect_shell_from_notes(
+        str(item.get("notes") or ""),
+        str(item.get("sources") or ""),
+        blob,
+    )
+    cluster_touch = _domain_cluster_touches_confirmed(domain, clusters, confirmed)
+
+    fc = {"domain": base}
+    blk, blk_r = _block_recommendation(
+        likely_type=lt,
+        tier=tier,
+        field_conf=fc,
+        redirect_shell=redirect_shell,
+        evidence_only_provider=False,
+        confirmed_operator_domain=domain in confirmed,
+        cluster_touches_confirmed_operator=cluster_touch,
+        operator_term_hits=op_hits,
+    )
+
+    if _placeholder_domain(domain):
+        prom, prom_r = "reject_for_now", ["rule:queue_discovered_reject_placeholder"]
+    else:
+        prom, prom_r = _promotion_recommendation(
+            likely_type=lt,
+            tier=tier,
+            legal_present=False,
+            cluster_attach=cluster_rec == "attach_to_existing_cluster",
+            strong_staged_cluster=cluster_rec == "create_new_cluster_candidate",
+            domain_ok=True,
+            weak_blob=_weak_notes_blob(str(item.get("notes") or ""), str(item.get("sources") or "")),
+            contradictory=contradictory,
+            little_signal=lt == "unknown" and op_hits == 0 and domain not in confirmed,
+            notes=str(item.get("notes") or ""),
+        )
+        prom_r = ["rule:queue_research_item_stage"] + prom_r
+
+    record_kind = "discovered_domain" if kind == "discovered_domain" else "extracted_fingerprint"
+    return {
+        "record_id": f"queue:{record_kind}:{domain}",
+        "source_type": "entity",
+        "likely_entity_type": lt,
+        "field_confidence": fc,
+        "promotion_recommendation": prom,
+        "cluster_recommendation": cluster_rec,
+        "block_recommendation": blk,
+        "reasoning": tr + cluster_rs + prom_r + blk_r,
+    }
 
 
 def run_review_rules(repo_root: Path | None = None) -> dict[str, Any]:
@@ -774,6 +1025,9 @@ def run_review_rules(repo_root: Path | None = None) -> dict[str, Any]:
 
     rel_promotes, rel_uses = _relationship_indices(rels)
 
+    confirmed = _load_confirmed_operator_domains(root, norm_ents)
+    extracted_by_domain = _index_extracted_fingerprints_by_domain(rc / "extracted_fingerprints.json")
+
     decisions: list[dict[str, Any]] = []
     seen: set[tuple[str, str]] = set()
 
@@ -785,6 +1039,7 @@ def run_review_rules(repo_root: Path | None = None) -> dict[str, Any]:
             staged_clusters=clusters,
             rel_promotes=rel_promotes,
             rel_uses_provider=rel_uses,
+            confirmed_operator_domains=confirmed,
         )
         decisions.append(d)
         seen.add(("entity", d["record_id"]))
@@ -803,7 +1058,7 @@ def run_review_rules(repo_root: Path | None = None) -> dict[str, Any]:
         seen.add(("relationship", d["record_id"]))
 
     for cl in clusters:
-        d = decision_for_cluster(cl, norm_index)
+        d = decision_for_cluster(cl, norm_index, confirmed_operator_domains=confirmed)
         decisions.append(d)
         seen.add(("cluster", d["record_id"]))
 
@@ -812,7 +1067,13 @@ def run_review_rules(repo_root: Path | None = None) -> dict[str, Any]:
         for item in rq.get("items") or []:
             if not isinstance(item, dict):
                 continue
-            d = decision_for_review_queue_item(item)
+            d = decision_for_review_queue_item(
+                item,
+                norm_index=norm_index,
+                confirmed_operator_domains=confirmed,
+                staged_clusters=clusters,
+                extracted_by_domain=extracted_by_domain,
+            )
             if not d:
                 continue
             key = (str(d["source_type"]), str(d["record_id"]))
