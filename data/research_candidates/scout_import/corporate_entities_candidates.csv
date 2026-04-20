@@ -1,0 +1,3 @@
+brand,primary_domain,other_domains,entity_type_hint,category,notes,source_url,source_set,confidence,review_status,duplicate_group_id,merge_notes
+AviaGames,aviagames.com,,corporate,Skill games,Platform-style company row,https://example.com/ref/avia,set2,low,needs_review,dg_8508bcafbe9f,
+VGW,vgw.co,virtualgamingworlds.com,corporate,Corporate,Parent / platform company (not consumer operator),https://example.com/ref/vgw,set2,low,needs_review,dg_c209e41609db,

@@ -1,0 +1,4 @@
+brand,primary_domain,other_domains,entity_type_hint,category,notes,source_url,source_set,confidence,review_status,duplicate_group_id,merge_notes
+Chanced,chanced.com,,redirect,Social casino,Duplicate across sets,https://example.com/ref/chanced-2,set2,low,needs_review,dg_71b3470ea93c,canonical row; duplicate_group=dg_71b3470ea93c; merged_ids=cand_c88efb3ff77c887b
+Funzcity,funzcity.com,funzcity.net,redirect,Sweeps,Casing variant B,https://example.com/ref/funz-2,set2,low,needs_review,dg_608c30ab15db,canonical row; duplicate_group=dg_608c30ab15db; merged_ids=cand_7319b3a33c43e18a
+No Limit Coins,nolimitcoins.com,alias.example.com,redirect,Sweeps,Formatting variant B,https://example.com/ref/nlc-2,set2,low,needs_review,dg_c70c515fd7dd,canonical row; duplicate_group=dg_c70c515fd7dd; merged_ids=cand_b6fe9f2b266b3ac2
