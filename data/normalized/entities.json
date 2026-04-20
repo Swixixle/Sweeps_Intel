@@ -20,9 +20,9 @@
       "chumbacasino.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_chumba",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Chumba Casino",
     "notes": "Official site: operated by VGW Malta Limited; sweepstakes sponsor/promoter VGW Games Limited per rules",
     "sources": [
@@ -52,9 +52,9 @@
       "luckylandslots.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_luckyland",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "LuckyLand Slots",
     "notes": "Privacy/terms cite VGW; some legal pages returned access denied on retrieval",
     "sources": [
@@ -89,9 +89,9 @@
       "stake.us"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_stake_us",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Stake.us",
     "notes": "Terms: Sweepsteaks Limited Cyprus HE436222",
     "sources": [
@@ -120,9 +120,9 @@
       "wowvegas.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_wow_vegas",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "WOW Vegas",
     "notes": "FAQ/affiliate terms: MW Services Limited Gibraltar no. 120828",
     "sources": [
@@ -152,9 +152,9 @@
       "bc.game"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_bc_game",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "BC.GAME",
     "notes": "Official site: operated by Twocent Technology Limited (Belize registration 41939)",
     "sources": [
@@ -183,9 +183,9 @@
       "sidepot.us"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_sidepot",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Sidepot",
     "notes": "Official site and terms verify sweeps/social-casino structure; legal entity not confirmed in this pass",
     "sources": [
@@ -215,9 +215,9 @@
       "myprize.us"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_myprize_us",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "MyPrize.US",
     "notes": "Official terms identify My Technology Inc.; site/rules confirm Gold Coins and Sweeps Cash structure",
     "sources": [
@@ -249,9 +249,9 @@
       "banking.withyotta.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_yotta",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Yotta",
     "notes": "Official site and terms: Yotta Technologies Inc.; Token Games vs Sweepstakes and YottaCash",
     "sources": [
@@ -281,9 +281,9 @@
       "huuugegames.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_huuuge_casino",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Huuuge Casino",
     "notes": "Free-to-play social casino product; legal entity not confirmed in this pass. Canonical product path /huuuge-casino.",
     "sources": [
@@ -315,9 +315,9 @@
       "pandamaster.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_panda_master",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Panda Master",
     "notes": "Official site: new software from the makers of Fire Kirin",
     "sources": [
@@ -344,9 +344,9 @@
       "firekirin.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_fire_kirin",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Fire Kirin",
     "notes": "Official pages describe sweepstakes/fish-game platform; legal entity not confirmed in this pass",
     "sources": [
@@ -373,9 +373,9 @@
       "novig.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_novig",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Novig",
     "notes": "Official site: sports trading / prediction-market positioning; legal entity not confirmed in this pass",
     "sources": [
@@ -402,9 +402,9 @@
       "pulsz.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_pulsz",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Pulsz",
     "notes": "",
     "sources": [
@@ -431,9 +431,9 @@
       "pulszbingo.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_pulsz_bingo",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Pulsz Bingo",
     "notes": "",
     "sources": [
@@ -460,9 +460,9 @@
       "mcluck.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_mcluck",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "McLuck",
     "notes": "",
     "sources": [
@@ -489,9 +489,9 @@
       "hellomillions.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_hello_millions",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Hello Millions",
     "notes": "",
     "sources": [
@@ -519,9 +519,9 @@
       "sportzino.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_sportzino",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Sportzino",
     "notes": "",
     "sources": [
@@ -548,9 +548,9 @@
       "crowncoinscasino.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_crown_coins",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Crown Coins Casino",
     "notes": "",
     "sources": [
@@ -577,9 +577,9 @@
       "jackpota.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_jackpota",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Jackpota",
     "notes": "",
     "sources": [
@@ -606,9 +606,9 @@
       "zulacasino.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_zula",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Zula Casino",
     "notes": "",
     "sources": [
@@ -636,9 +636,9 @@
       "high5casino.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_high5",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "High 5 Casino",
     "notes": "",
     "sources": [
@@ -665,9 +665,9 @@
       "globalpoker.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_global_poker",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Global Poker",
     "notes": "",
     "sources": [
@@ -694,9 +694,9 @@
       "fortunecoins.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_fortune_coins",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Fortune Coins",
     "notes": "",
     "sources": [
@@ -723,9 +723,9 @@
       "yaycasino.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_yay",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Yay Casino",
     "notes": "Research queue: terms cited via support articles only; no official legal entity verified in seed pass\u2014do not treat as curated",
     "sources": [
@@ -753,9 +753,9 @@
       "dingdingding.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_ding_ding_ding",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Ding Ding Ding",
     "notes": "",
     "sources": [
@@ -782,9 +782,9 @@
       "spree.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_spree",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Spree",
     "notes": "",
     "sources": [
@@ -811,9 +811,9 @@
       "clubs-poker.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_clubs_poker",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Clubs Poker",
     "notes": "",
     "sources": [
@@ -841,9 +841,9 @@
       "fliff.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_fliff",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Fliff",
     "notes": "",
     "sources": [
@@ -870,9 +870,9 @@
       "rebet.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_rebet",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Rebet",
     "notes": "",
     "sources": [
@@ -901,9 +901,9 @@
       "draftkings.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_draftkings",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "DraftKings",
     "notes": "",
     "sources": [
@@ -932,9 +932,9 @@
       "fanduel.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_fanduel",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "FanDuel",
     "notes": "",
     "sources": [
@@ -962,9 +962,9 @@
       "betmgm.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_betmgm",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "BetMGM",
     "notes": "",
     "sources": [
@@ -992,9 +992,9 @@
       "caesars.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_caesars",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Caesars Sportsbook & Casino",
     "notes": "",
     "sources": [
@@ -1022,9 +1022,9 @@
       "betrivers.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_betrivers",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "BetRivers",
     "notes": "",
     "sources": [
@@ -1051,9 +1051,9 @@
       "pointsbet.com"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_points_bet",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "PointsBet",
     "notes": "",
     "sources": [
@@ -1082,9 +1082,9 @@
       "bovada.lv"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_bovada",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Bovada",
     "notes": "",
     "sources": [
@@ -1113,9 +1113,9 @@
       "ignitioncasino.eu"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_ignition",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Ignition Casino",
     "notes": "",
     "sources": [
@@ -1144,9 +1144,9 @@
       "mybookie.ag"
     ],
     "entity_type": "operator",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "operator_mybookie",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "MyBookie",
     "notes": "",
     "sources": [
@@ -1176,9 +1176,9 @@
       "pending-promoter-01.invalid"
     ],
     "entity_type": "promoter",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "promoter_manual_001",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "REPLACE promoter display name",
     "notes": "Swap placeholder for real domains when curated",
     "sources": [
@@ -1205,9 +1205,9 @@
       "pending-promoter-02.invalid"
     ],
     "entity_type": "promoter",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "promoter_manual_002",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "REPLACE second promoter",
     "notes": "Use for known promo funnels; leave inactive until curated",
     "sources": [
@@ -1230,9 +1230,9 @@
       "pragmaticplay.com"
     ],
     "entity_type": "provider",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "provider_pragmatic_play",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Pragmatic Play",
     "notes": "Verified Stake.us provider hub",
     "sources": [
@@ -1257,9 +1257,9 @@
       "bgaming-network.com"
     ],
     "entity_type": "provider",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "provider_bgaming",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "BGaming",
     "notes": "",
     "sources": [
@@ -1283,9 +1283,9 @@
       "playson.com"
     ],
     "entity_type": "provider",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "provider_playson",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Playson",
     "notes": "",
     "sources": [
@@ -1307,9 +1307,9 @@
     "confidence": 0.85,
     "domains": [],
     "entity_type": "provider",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "provider_iconic21",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "ICONIC21",
     "notes": "Domain unverified; Stake.us official provider page",
     "sources": [
@@ -1330,9 +1330,9 @@
     "confidence": 0.75,
     "domains": [],
     "entity_type": "provider",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "provider_animo_studios",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "Animo Studios",
     "notes": "Domain unverified; Stake.us official game page",
     "sources": [
@@ -1356,9 +1356,9 @@
       "pending-payment-01.invalid"
     ],
     "entity_type": "payment_path",
-    "first_seen": "2026-04-19T13:18:23Z",
+    "first_seen": "2026-04-19T13:52:53Z",
     "id": "payment_manual_001",
-    "last_seen": "2026-04-19T13:18:23Z",
+    "last_seen": "2026-04-19T13:52:53Z",
     "name": "REPLACE cashier or wallet brand",
     "notes": "Replace placeholder domain when curated",
     "sources": [

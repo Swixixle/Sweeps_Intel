@@ -1,5 +1,7 @@
 {
   "domains": [
+    "banking.withyotta.com",
+    "bc.game",
     "betmgm.com",
     "betrivers.com",
     "bgaming-network.com",
@@ -11,30 +13,37 @@
     "dingdingding.com",
     "draftkings.com",
     "fanduel.com",
+    "firekirin.com",
     "fliff.com",
     "fortunecoins.com",
+    "games.withyotta.com",
     "globalpoker.com",
     "hellomillions.com",
     "high5casino.com",
+    "huuugegames.com",
     "ignitioncasino.eu",
     "jackpota.com",
     "luckylandslots.com",
     "mcluck.com",
     "mybookie.ag",
+    "myprize.us",
+    "novig.com",
+    "pandamaster.com",
     "playson.com",
     "pointsbet.com",
     "pragmaticplay.com",
     "pulsz.com",
     "pulszbingo.com",
     "rebet.com",
+    "sidepot.us",
     "sportzino.com",
     "spree.com",
     "stake.us",
+    "withyotta.com",
     "wowvegas.com",
-    "yaycasino.com",
     "zulacasino.com"
   ],
-  "generated_at": "2026-04-19T13:01:58Z",
+  "generated_at": "2026-04-19T13:52:53Z",
   "source_entities": [
     {
       "domain": "chumbacasino.com",
@@ -54,6 +63,56 @@
     {
       "domain": "wowvegas.com",
       "entity_id": "operator_wow_vegas",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "bc.game",
+      "entity_id": "operator_bc_game",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "sidepot.us",
+      "entity_id": "operator_sidepot",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "myprize.us",
+      "entity_id": "operator_myprize_us",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "withyotta.com",
+      "entity_id": "operator_yotta",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "games.withyotta.com",
+      "entity_id": "operator_yotta",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "banking.withyotta.com",
+      "entity_id": "operator_yotta",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "huuugegames.com",
+      "entity_id": "operator_huuuge_casino",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "pandamaster.com",
+      "entity_id": "operator_panda_master",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "firekirin.com",
+      "entity_id": "operator_fire_kirin",
+      "entity_type": "operator"
+    },
+    {
+      "domain": "novig.com",
+      "entity_id": "operator_novig",
       "entity_type": "operator"
     },
     {
@@ -109,11 +168,6 @@
     {
       "domain": "fortunecoins.com",
       "entity_id": "operator_fortune_coins",
-      "entity_type": "operator"
-    },
-    {
-      "domain": "yaycasino.com",
-      "entity_id": "operator_yay",
       "entity_type": "operator"
     },
     {

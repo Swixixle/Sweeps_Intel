@@ -3,21 +3,30 @@
     {
       "evidence": [
         {
-          "type": "shared_analytics_or_tag",
-          "value": "g-shared-intel-test",
-          "weight": 40
-        },
-        {
-          "type": "shared_cashier_pattern",
-          "value": "/cashier/deposit",
-          "weight": 15
+          "type": "shared_provider",
+          "value": "animo studios",
+          "weight": 20
         }
       ],
-      "generated_at": "2026-04-19T13:01:58Z",
-      "label": "strong_affiliation",
-      "left_id": "operator_chumba",
-      "right_id": "operator_luckyland",
-      "score": 55
+      "generated_at": "2026-04-19T13:52:53Z",
+      "label": "weak_signal",
+      "left_id": "operator_stake_us",
+      "right_id": "provider_animo_studios",
+      "score": 20
+    },
+    {
+      "evidence": [
+        {
+          "type": "shared_provider",
+          "value": "iconic21",
+          "weight": 20
+        }
+      ],
+      "generated_at": "2026-04-19T13:52:53Z",
+      "label": "weak_signal",
+      "left_id": "operator_stake_us",
+      "right_id": "provider_iconic21",
+      "score": 20
     },
     {
       "evidence": [
@@ -27,14 +36,179 @@
           "weight": 20
         }
       ],
-      "generated_at": "2026-04-19T13:01:58Z",
+      "generated_at": "2026-04-19T13:52:53Z",
       "label": "weak_signal",
-      "left_id": "operator_chumba",
+      "left_id": "operator_stake_us",
       "right_id": "provider_pragmatic_play",
       "score": 20
     }
   ],
   "entities": [
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US",
+          "Canada",
+          "Malta"
+        ],
+        "legal_entity": "VGW Malta Limited|VGW Games Limited",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino",
+        "social_casino"
+      ],
+      "confidence": 0.99,
+      "domains": [
+        "chumbacasino.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_chumba",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Chumba Casino",
+      "notes": "Official site: operated by VGW Malta Limited; sweepstakes sponsor/promoter VGW Games Limited per rules",
+      "sources": [
+        "official_site",
+        "terms",
+        "sweeps_rules",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US"
+        ],
+        "legal_entity": "VGW|VGW Group",
+        "provider_names": []
+      },
+      "categories": [
+        "sweeps_casino",
+        "social_casino"
+      ],
+      "confidence": 0.95,
+      "domains": [
+        "luckylandslots.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_luckyland",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "LuckyLand Slots",
+      "notes": "Privacy/terms cite VGW; some legal pages returned access denied on retrieval",
+      "sources": [
+        "official_site",
+        "privacy",
+        "faq",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "US",
+          "Cyprus"
+        ],
+        "legal_entity": "Sweepsteaks Limited",
+        "provider_names": [
+          "Pragmatic Play",
+          "ICONIC21",
+          "Animo Studios"
+        ]
+      },
+      "categories": [
+        "sweeps_casino",
+        "social_casino"
+      ],
+      "confidence": 0.99,
+      "domains": [
+        "stake.us"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_stake_us",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Stake.us",
+      "notes": "Terms: Sweepsteaks Limited Cyprus HE436222",
+      "sources": [
+        "official_terms",
+        "provider_pages",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "Gibraltar"
+        ],
+        "legal_entity": "MW Services Limited",
+        "provider_names": []
+      },
+      "categories": [
+        "social_casino",
+        "sweeps_casino"
+      ],
+      "confidence": 0.98,
+      "domains": [
+        "wowvegas.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_wow_vegas",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "WOW Vegas",
+      "notes": "FAQ/affiliate terms: MW Services Limited Gibraltar no. 120828",
+      "sources": [
+        "official_site",
+        "faq",
+        "affiliate_terms",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "Belize"
+        ],
+        "legal_entity": "Twocent Technology Limited",
+        "provider_names": []
+      },
+      "categories": [
+        "crypto_casino",
+        "sportsbook"
+      ],
+      "confidence": 0.99,
+      "domains": [
+        "bc.game"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_bc_game",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "BC.GAME",
+      "notes": "Official site: operated by Twocent Technology Limited (Belize registration 41939)",
+      "sources": [
+        "official_site",
+        "terms",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
     {
       "attributes": {
         "blockable": true,
@@ -49,18 +223,20 @@
         "sweeps_casino",
         "social_casino"
       ],
-      "confidence": 0.98,
+      "confidence": 0.97,
       "domains": [
-        "chumbacasino.com"
+        "sidepot.us"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
-      "id": "operator_chumba",
-      "last_seen": "2026-04-19T13:01:58Z",
-      "name": "Chumba Casino",
-      "notes": "",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_sidepot",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Sidepot",
+      "notes": "Official site and terms verify sweeps/social-casino structure; legal entity not confirmed in this pass",
       "sources": [
-        "manual_seed",
+        "official_site",
+        "terms",
+        "sweepstakes_rules",
         "blocklist_2026-04"
       ],
       "status": "active"
@@ -72,54 +248,27 @@
         "jurisdictions": [
           "US"
         ],
-        "legal_entity": "",
-        "provider_names": []
-      },
-      "categories": [
-        "sweeps_casino"
-      ],
-      "confidence": 0.98,
-      "domains": [
-        "luckylandslots.com"
-      ],
-      "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
-      "id": "operator_luckyland",
-      "last_seen": "2026-04-19T13:01:58Z",
-      "name": "LuckyLand Slots",
-      "notes": "",
-      "sources": [
-        "manual_seed",
-        "blocklist_2026-04"
-      ],
-      "status": "active"
-    },
-    {
-      "attributes": {
-        "blockable": true,
-        "evidence_only": false,
-        "jurisdictions": [
-          "US"
-        ],
-        "legal_entity": "",
+        "legal_entity": "My Technology, Inc.",
         "provider_names": []
       },
       "categories": [
         "sweeps_casino",
-        "crypto_sweeps"
+        "social_casino"
       ],
-      "confidence": 0.97,
+      "confidence": 0.99,
       "domains": [
-        "stake.us"
+        "myprize.us"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
-      "id": "operator_stake_us",
-      "last_seen": "2026-04-19T13:01:58Z",
-      "name": "Stake.us",
-      "notes": "",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_myprize_us",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "MyPrize.US",
+      "notes": "Official terms identify My Technology Inc.; site/rules confirm Gold Coins and Sweeps Cash structure",
       "sources": [
-        "manual_seed",
+        "official_site",
+        "terms",
+        "sweepstakes_rules",
         "blocklist_2026-04"
       ],
       "status": "active"
@@ -131,24 +280,151 @@
         "jurisdictions": [
           "US"
         ],
+        "legal_entity": "Yotta Technologies Inc.",
+        "provider_names": []
+      },
+      "categories": [
+        "sweepstakes_platform",
+        "social_gaming"
+      ],
+      "confidence": 0.99,
+      "domains": [
+        "withyotta.com",
+        "games.withyotta.com",
+        "banking.withyotta.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_yotta",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Yotta",
+      "notes": "Official site and terms: Yotta Technologies Inc.; Token Games vs Sweepstakes and YottaCash",
+      "sources": [
+        "official_site",
+        "terms",
+        "sweepstakes_rules",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "Global"
+        ],
         "legal_entity": "",
         "provider_names": []
       },
       "categories": [
-        "sweeps_casino"
+        "social_casino",
+        "free_to_play_casino"
       ],
-      "confidence": 0.97,
+      "confidence": 0.93,
       "domains": [
-        "wowvegas.com"
+        "huuugegames.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
-      "id": "operator_wow_vegas",
-      "last_seen": "2026-04-19T13:01:58Z",
-      "name": "WOW Vegas",
-      "notes": "",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_huuuge_casino",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Huuuge Casino",
+      "notes": "Free-to-play social casino product; legal entity not confirmed in this pass. Canonical product path /huuuge-casino.",
       "sources": [
-        "manual_seed",
+        "official_site",
+        "game_page",
+        "eula",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [
+          "Global"
+        ],
+        "legal_entity": "",
+        "provider_names": [
+          "Fire Kirin"
+        ]
+      },
+      "categories": [
+        "fish_game_platform",
+        "skill_game_platform"
+      ],
+      "confidence": 0.94,
+      "domains": [
+        "pandamaster.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_panda_master",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Panda Master",
+      "notes": "Official site: new software from the makers of Fire Kirin",
+      "sources": [
+        "official_site",
+        "menu_page",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sweepstakes_gaming",
+        "fish_game_platform"
+      ],
+      "confidence": 0.8,
+      "domains": [
+        "firekirin.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_fire_kirin",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Fire Kirin",
+      "notes": "Official pages describe sweepstakes/fish-game platform; legal entity not confirmed in this pass",
+      "sources": [
+        "official_site",
+        "contact_page",
+        "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": true,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "provider_names": []
+      },
+      "categories": [
+        "sports_trading",
+        "prediction_market"
+      ],
+      "confidence": 0.85,
+      "domains": [
+        "novig.com"
+      ],
+      "entity_type": "operator",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "operator_novig",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Novig",
+      "notes": "Official site: sports trading / prediction-market positioning; legal entity not confirmed in this pass",
+      "sources": [
+        "official_site",
         "blocklist_2026-04"
       ],
       "status": "active"
@@ -171,9 +447,9 @@
         "pulsz.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_pulsz",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Pulsz",
       "notes": "",
       "sources": [
@@ -200,9 +476,9 @@
         "pulszbingo.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_pulsz_bingo",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Pulsz Bingo",
       "notes": "",
       "sources": [
@@ -229,9 +505,9 @@
         "mcluck.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_mcluck",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "McLuck",
       "notes": "",
       "sources": [
@@ -258,9 +534,9 @@
         "hellomillions.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_hello_millions",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Hello Millions",
       "notes": "",
       "sources": [
@@ -288,9 +564,9 @@
         "sportzino.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_sportzino",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Sportzino",
       "notes": "",
       "sources": [
@@ -317,9 +593,9 @@
         "crowncoinscasino.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_crown_coins",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Crown Coins Casino",
       "notes": "",
       "sources": [
@@ -346,9 +622,9 @@
         "jackpota.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_jackpota",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Jackpota",
       "notes": "",
       "sources": [
@@ -375,9 +651,9 @@
         "zulacasino.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_zula",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Zula Casino",
       "notes": "",
       "sources": [
@@ -405,9 +681,9 @@
         "high5casino.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_high5",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "High 5 Casino",
       "notes": "",
       "sources": [
@@ -434,9 +710,9 @@
         "globalpoker.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_global_poker",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Global Poker",
       "notes": "",
       "sources": [
@@ -463,9 +739,9 @@
         "fortunecoins.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_fortune_coins",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Fortune Coins",
       "notes": "",
       "sources": [
@@ -487,21 +763,22 @@
       "categories": [
         "sweeps_casino"
       ],
-      "confidence": 0.93,
+      "confidence": 0.5,
       "domains": [
         "yaycasino.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_yay",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Yay Casino",
-      "notes": "",
+      "notes": "Research queue: terms cited via support articles only; no official legal entity verified in seed pass\u2014do not treat as curated",
       "sources": [
         "manual_seed",
-        "blocklist_2026-04"
+        "blocklist_2026-04",
+        "research_queue"
       ],
-      "status": "active"
+      "status": "inactive"
     },
     {
       "attributes": {
@@ -521,9 +798,9 @@
         "dingdingding.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_ding_ding_ding",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Ding Ding Ding",
       "notes": "",
       "sources": [
@@ -550,9 +827,9 @@
         "spree.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_spree",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Spree",
       "notes": "",
       "sources": [
@@ -579,9 +856,9 @@
         "clubs-poker.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_clubs_poker",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Clubs Poker",
       "notes": "",
       "sources": [
@@ -609,9 +886,9 @@
         "fliff.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_fliff",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Fliff",
       "notes": "",
       "sources": [
@@ -638,9 +915,9 @@
         "rebet.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_rebet",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Rebet",
       "notes": "",
       "sources": [
@@ -669,9 +946,9 @@
         "draftkings.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_draftkings",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "DraftKings",
       "notes": "",
       "sources": [
@@ -700,9 +977,9 @@
         "fanduel.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_fanduel",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "FanDuel",
       "notes": "",
       "sources": [
@@ -730,9 +1007,9 @@
         "betmgm.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_betmgm",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "BetMGM",
       "notes": "",
       "sources": [
@@ -760,9 +1037,9 @@
         "caesars.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_caesars",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Caesars Sportsbook & Casino",
       "notes": "",
       "sources": [
@@ -790,9 +1067,9 @@
         "betrivers.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_betrivers",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "BetRivers",
       "notes": "",
       "sources": [
@@ -819,9 +1096,9 @@
         "pointsbet.com"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_points_bet",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "PointsBet",
       "notes": "",
       "sources": [
@@ -850,9 +1127,9 @@
         "bovada.lv"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_bovada",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Bovada",
       "notes": "",
       "sources": [
@@ -881,9 +1158,9 @@
         "ignitioncasino.eu"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_ignition",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Ignition Casino",
       "notes": "",
       "sources": [
@@ -912,9 +1189,9 @@
         "mybookie.ag"
       ],
       "entity_type": "operator",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "operator_mybookie",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "MyBookie",
       "notes": "",
       "sources": [
@@ -944,9 +1221,9 @@
         "pending-promoter-01.invalid"
       ],
       "entity_type": "promoter",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "promoter_manual_001",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "REPLACE promoter display name",
       "notes": "Swap placeholder for real domains when curated",
       "sources": [
@@ -973,9 +1250,9 @@
         "pending-promoter-02.invalid"
       ],
       "entity_type": "promoter",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "promoter_manual_002",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "REPLACE second promoter",
       "notes": "Use for known promo funnels; leave inactive until curated",
       "sources": [
@@ -986,6 +1263,7 @@
     {
       "attributes": {
         "blockable": true,
+        "domains_pending_verification": false,
         "evidence_only": false,
         "jurisdictions": [],
         "legal_entity": "",
@@ -997,12 +1275,13 @@
         "pragmaticplay.com"
       ],
       "entity_type": "provider",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "provider_pragmatic_play",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Pragmatic Play",
-      "notes": "",
+      "notes": "Verified Stake.us provider hub",
       "sources": [
+        "official_provider_page",
         "manual_seed",
         "blocklist_2026-04"
       ],
@@ -1011,6 +1290,7 @@
     {
       "attributes": {
         "blockable": true,
+        "domains_pending_verification": false,
         "evidence_only": false,
         "jurisdictions": [],
         "legal_entity": "",
@@ -1022,9 +1302,9 @@
         "bgaming-network.com"
       ],
       "entity_type": "provider",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "provider_bgaming",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "BGaming",
       "notes": "",
       "sources": [
@@ -1036,6 +1316,7 @@
     {
       "attributes": {
         "blockable": true,
+        "domains_pending_verification": false,
         "evidence_only": false,
         "jurisdictions": [],
         "legal_entity": "",
@@ -1047,14 +1328,60 @@
         "playson.com"
       ],
       "entity_type": "provider",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "provider_playson",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "Playson",
       "notes": "",
       "sources": [
         "manual_seed",
         "blocklist_2026-04"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": false,
+        "domains_pending_verification": true,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "provider_type": "game_studio"
+      },
+      "categories": [],
+      "confidence": 0.85,
+      "domains": [],
+      "entity_type": "provider",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "provider_iconic21",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "ICONIC21",
+      "notes": "Domain unverified; Stake.us official provider page",
+      "sources": [
+        "official_provider_page"
+      ],
+      "status": "active"
+    },
+    {
+      "attributes": {
+        "blockable": false,
+        "domains_pending_verification": true,
+        "evidence_only": false,
+        "jurisdictions": [],
+        "legal_entity": "",
+        "provider_type": "game_studio"
+      },
+      "categories": [],
+      "confidence": 0.75,
+      "domains": [],
+      "entity_type": "provider",
+      "first_seen": "2026-04-19T13:52:53Z",
+      "id": "provider_animo_studios",
+      "last_seen": "2026-04-19T13:52:53Z",
+      "name": "Animo Studios",
+      "notes": "Domain unverified; Stake.us official game page",
+      "sources": [
+        "official_game_page"
       ],
       "status": "active"
     },
@@ -1074,9 +1401,9 @@
         "pending-payment-01.invalid"
       ],
       "entity_type": "payment_path",
-      "first_seen": "2026-04-19T13:01:58Z",
+      "first_seen": "2026-04-19T13:52:53Z",
       "id": "payment_manual_001",
-      "last_seen": "2026-04-19T13:01:58Z",
+      "last_seen": "2026-04-19T13:52:53Z",
       "name": "REPLACE cashier or wallet brand",
       "notes": "Replace placeholder domain when curated",
       "sources": [
@@ -1086,6 +1413,57 @@
     }
   ],
   "fingerprints": [
+    {
+      "content": {
+        "bonus_terms": [
+          "cooling off period",
+          "ongoing cashback",
+          "self-exclusion",
+          "welcome bonuses"
+        ],
+        "footer_phrases": [
+          "41939",
+          "Belize",
+          "Responsible Gaming Policy",
+          "Terms of Service",
+          "Twocent Technology Limited"
+        ],
+        "legal_entity_names": [
+          "Twocent Technology Limited"
+        ],
+        "provider_mentions": [],
+        "title_terms": [
+          "BC.GAME",
+          "casino and sportsbook",
+          "Crypto Casino",
+          "Crypto Gambling"
+        ]
+      },
+      "entity_id": "operator_bc_game",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
     {
       "content": {
         "bonus_terms": [],
@@ -1220,26 +1598,32 @@
     },
     {
       "content": {
-        "bonus_terms": [],
-        "footer_phrases": [],
+        "bonus_terms": [
+          "redeemable",
+          "Sweeps Coins"
+        ],
+        "footer_phrases": [
+          "VGW Games Limited",
+          "VGW Group",
+          "VGW Malta Limited"
+        ],
         "legal_entity_names": [
-          "Example Holdings Intel Test LLC"
+          "VGW Games Limited",
+          "VGW Malta Limited"
         ],
-        "provider_mentions": [
-          "Pragmatic Play"
-        ],
-        "title_terms": []
+        "provider_mentions": [],
+        "title_terms": [
+          "Chumba Casino",
+          "Free Slot Games",
+          "Online Social Casino"
+        ]
       },
       "entity_id": "operator_chumba",
       "flow": {
-        "cashier_paths": [
-          "/cashier/deposit"
-        ],
+        "cashier_paths": [],
         "kyc_vendors": [],
         "payment_providers": [],
-        "redemption_paths": [
-          "/redeem"
-        ],
+        "redemption_paths": [],
         "signup_paths": []
       },
       "provider_signals": {
@@ -1248,9 +1632,7 @@
         "provider_names": []
       },
       "technical": {
-        "analytics_ids": [
-          "g-shared-intel-test"
-        ],
+        "analytics_ids": [],
         "asset_domains": [],
         "iframe_domains": [],
         "nameservers": [],
@@ -1402,6 +1784,47 @@
         "title_terms": []
       },
       "entity_id": "operator_fanduel",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [
+          "online casino platform"
+        ],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": [
+          "Fire Kirin",
+          "fish games",
+          "keno",
+          "slots",
+          "sweepstakes gaming platform"
+        ]
+      },
+      "entity_id": "operator_fire_kirin",
       "flow": {
         "cashier_paths": [],
         "kyc_vendors": [],
@@ -1594,6 +2017,47 @@
     {
       "content": {
         "bonus_terms": [],
+        "footer_phrases": [
+          "free-to-play",
+          "mobile gaming platform",
+          "social real-time"
+        ],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": [
+          "Huuuge",
+          "Huuuge Casino",
+          "Play Huuuge Casino for Free"
+        ]
+      },
+      "entity_id": "operator_huuuge_casino",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
         "footer_phrases": [],
         "legal_entity_names": [],
         "provider_mentions": [],
@@ -1659,19 +2123,27 @@
     },
     {
       "content": {
-        "bonus_terms": [],
-        "footer_phrases": [],
+        "bonus_terms": [
+          "cash prizes",
+          "free bonus",
+          "Sweeps Coins"
+        ],
+        "footer_phrases": [
+          "VGW Group"
+        ],
         "legal_entity_names": [
-          "Example Holdings Intel Test LLC"
+          "VGW",
+          "VGW Group"
         ],
         "provider_mentions": [],
-        "title_terms": []
+        "title_terms": [
+          "Luckyland Slots",
+          "Play 100+ Slots Games Online For Free"
+        ]
       },
       "entity_id": "operator_luckyland",
       "flow": {
-        "cashier_paths": [
-          "/cashier/deposit"
-        ],
+        "cashier_paths": [],
         "kyc_vendors": [],
         "payment_providers": [],
         "redemption_paths": [],
@@ -1683,9 +2155,7 @@
         "provider_names": []
       },
       "technical": {
-        "analytics_ids": [
-          "g-shared-intel-test"
-        ],
+        "analytics_ids": [],
         "asset_domains": [],
         "iframe_domains": [],
         "nameservers": [],
@@ -1738,6 +2208,141 @@
         "title_terms": []
       },
       "entity_id": "operator_mybookie",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [
+          "bonus tab",
+          "daily entry",
+          "Gold Coins",
+          "Sweeps Cash",
+          "XP Bonuses"
+        ],
+        "footer_phrases": [
+          "18+",
+          "ALWAYS FREE",
+          "MyPrize.us",
+          "No Purchase Necessary",
+          "Payment Agent(s)",
+          "payment credentials"
+        ],
+        "legal_entity_names": [
+          "My Technology, Inc."
+        ],
+        "provider_mentions": [],
+        "title_terms": [
+          "MyPrize US",
+          "Play Together with creators and friends",
+          "social casino",
+          "social gaming platform"
+        ]
+      },
+      "entity_id": "operator_myprize_us",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [
+          "prediction market",
+          "sports trading"
+        ],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": [
+          "America's #1 Sports Trading App",
+          "Novig"
+        ]
+      },
+      "entity_id": "operator_novig",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [
+          "24/7 Customer Support",
+          "Fish Game App",
+          "Official Site"
+        ],
+        "legal_entity_names": [],
+        "provider_mentions": [
+          "Fire Kirin"
+        ],
+        "title_terms": [
+          "Panda Master Fish Games",
+          "Panda Master Games",
+          "Panda Master Management System"
+        ]
+      },
+      "entity_id": "operator_panda_master",
       "flow": {
         "cashier_paths": [],
         "kyc_vendors": [],
@@ -1896,6 +2501,52 @@
     },
     {
       "content": {
+        "bonus_terms": [
+          "daily bonus",
+          "free Sweeps Coins Bonus",
+          "mail a request"
+        ],
+        "footer_phrases": [
+          "Gold Coins",
+          "No Purchase Necessary",
+          "real money gambling",
+          "Sweeps Coins",
+          "Terms of Use"
+        ],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": [
+          "completely free gaming experience",
+          "Sidepot"
+        ]
+      },
+      "entity_id": "operator_sidepot",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
         "bonus_terms": [],
         "footer_phrases": [],
         "legal_entity_names": [],
@@ -1963,10 +2614,25 @@
     {
       "content": {
         "bonus_terms": [],
-        "footer_phrases": [],
-        "legal_entity_names": [],
-        "provider_mentions": [],
-        "title_terms": []
+        "footer_phrases": [
+          "Cyprus",
+          "HE436222",
+          "social casino operator",
+          "Sweepsteaks Limited"
+        ],
+        "legal_entity_names": [
+          "Sweepsteaks Limited"
+        ],
+        "provider_mentions": [
+          "Animo Studios",
+          "ICONIC21",
+          "Pragmatic Play"
+        ],
+        "title_terms": [
+          "Leading Social Casino",
+          "Social Casino Guide",
+          "Stake.us"
+        ]
       },
       "entity_id": "operator_stake_us",
       "flow": {
@@ -1996,10 +2662,19 @@
     {
       "content": {
         "bonus_terms": [],
-        "footer_phrases": [],
-        "legal_entity_names": [],
+        "footer_phrases": [
+          "120828",
+          "Gibraltar",
+          "MW Services Limited"
+        ],
+        "legal_entity_names": [
+          "MW Services Limited"
+        ],
         "provider_mentions": [],
-        "title_terms": []
+        "title_terms": [
+          "The Best Free-Play Social Casino",
+          "WOW Vegas"
+        ]
       },
       "entity_id": "operator_wow_vegas",
       "flow": {
@@ -2035,6 +2710,55 @@
         "title_terms": []
       },
       "entity_id": "operator_yay",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [
+          "prize redemption",
+          "Sweepstakes Rules",
+          "Tokens",
+          "YottaCash"
+        ],
+        "footer_phrases": [
+          "always free to play",
+          "No purchase necessary",
+          "Yotta Technologies Inc."
+        ],
+        "legal_entity_names": [
+          "Yotta Technologies Inc."
+        ],
+        "provider_mentions": [],
+        "title_terms": [
+          "Play Games Win Prizes",
+          "Sweepstakes Game",
+          "Yotta",
+          "YottaCash"
+        ]
+      },
+      "entity_id": "operator_yotta",
       "flow": {
         "cashier_paths": [],
         "kyc_vendors": [],
@@ -2199,7 +2923,73 @@
         "provider_mentions": [],
         "title_terms": []
       },
+      "entity_id": "provider_animo_studios",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
       "entity_id": "provider_bgaming",
+      "flow": {
+        "cashier_paths": [],
+        "kyc_vendors": [],
+        "payment_providers": [],
+        "redemption_paths": [],
+        "signup_paths": []
+      },
+      "provider_signals": {
+        "cdn_patterns": [],
+        "game_launcher_patterns": [],
+        "provider_names": []
+      },
+      "technical": {
+        "analytics_ids": [],
+        "asset_domains": [],
+        "iframe_domains": [],
+        "nameservers": [],
+        "registrar": "",
+        "script_domains": [],
+        "ssl_issuers": [],
+        "support_widget_providers": [],
+        "tag_manager_ids": []
+      }
+    },
+    {
+      "content": {
+        "bonus_terms": [],
+        "footer_phrases": [],
+        "legal_entity_names": [],
+        "provider_mentions": [],
+        "title_terms": []
+      },
+      "entity_id": "provider_iconic21",
       "flow": {
         "cashier_paths": [],
         "kyc_vendors": [],
@@ -2291,6 +3081,62 @@
       }
     }
   ],
-  "generated_at": "2026-04-19T13:01:58Z",
-  "relationships": []
+  "generated_at": "2026-04-19T13:52:53Z",
+  "relationships": [
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "anchor_text": "same trusted company behind LuckyLand Slots and Chumba Casino",
+        "url": "https://www.luckylandslots.com/faqs"
+      },
+      "from_id": "operator_luckyland",
+      "relationship": "related_to",
+      "source": "official_faq",
+      "to_id": "operator_chumba"
+    },
+    {
+      "confidence": 0.95,
+      "evidence": {
+        "anchor_text": "Pragmatic Play group page on Stake.us",
+        "url": "https://stake.us/casino/group/pragmatic-play"
+      },
+      "from_id": "operator_stake_us",
+      "relationship": "uses_provider",
+      "source": "official_provider_page",
+      "to_id": "provider_pragmatic_play"
+    },
+    {
+      "confidence": 0.95,
+      "evidence": {
+        "anchor_text": "ICONIC21 group page on Stake.us",
+        "url": "https://stake.us/casino/group/iconic21"
+      },
+      "from_id": "operator_stake_us",
+      "relationship": "uses_provider",
+      "source": "official_provider_page",
+      "to_id": "provider_iconic21"
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "anchor_text": "Animo Studios game page on Stake.us",
+        "url": "https://stake.us/casino/games/animo-studios-sky-roulette"
+      },
+      "from_id": "operator_stake_us",
+      "relationship": "uses_provider",
+      "source": "official_game_page",
+      "to_id": "provider_animo_studios"
+    },
+    {
+      "confidence": 0.9,
+      "evidence": {
+        "anchor_text": "new software from the makers of Fire Kirin",
+        "url": "https://pandamaster.com/"
+      },
+      "from_id": "operator_panda_master",
+      "relationship": "related_to",
+      "source": "official_site",
+      "to_id": "operator_fire_kirin"
+    }
+  ]
 }

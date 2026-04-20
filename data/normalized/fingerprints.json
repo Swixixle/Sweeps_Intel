@@ -1,143 +1,29 @@
 [
   {
     "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
+      "bonus_terms": [
+        "cooling off period",
+        "ongoing cashback",
+        "self-exclusion",
+        "welcome bonuses"
+      ],
+      "footer_phrases": [
+        "41939",
+        "Belize",
+        "Responsible Gaming Policy",
+        "Terms of Service",
+        "Twocent Technology Limited"
+      ],
+      "legal_entity_names": [
+        "Twocent Technology Limited"
+      ],
       "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_chumba",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_luckyland",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_stake_us",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_wow_vegas",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
+      "title_terms": [
+        "BC.GAME",
+        "casino and sportsbook",
+        "Crypto Casino",
+        "Crypto Gambling"
+      ]
     },
     "entity_id": "operator_bc_game",
     "flow": {
@@ -172,7 +58,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_sidepot",
+    "entity_id": "operator_betmgm",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -205,7 +91,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_myprize_us",
+    "entity_id": "operator_betrivers",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -238,7 +124,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_yotta",
+    "entity_id": "operator_bovada",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -271,7 +157,54 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_huuuge_casino",
+    "entity_id": "operator_caesars",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [
+        "redeemable",
+        "Sweeps Coins"
+      ],
+      "footer_phrases": [
+        "VGW Games Limited",
+        "VGW Group",
+        "VGW Malta Limited"
+      ],
+      "legal_entity_names": [
+        "VGW Games Limited",
+        "VGW Malta Limited"
+      ],
+      "provider_mentions": [],
+      "title_terms": [
+        "Chumba Casino",
+        "Free Slot Games",
+        "Online Social Casino"
+      ]
+    },
+    "entity_id": "operator_chumba",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -304,7 +237,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_panda_master",
+    "entity_id": "operator_clubs_poker",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -336,6 +269,146 @@
       "legal_entity_names": [],
       "provider_mentions": [],
       "title_terms": []
+    },
+    "entity_id": "operator_crown_coins",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_ding_ding_ding",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_draftkings",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_fanduel",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [
+        "online casino platform"
+      ],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": [
+        "Fire Kirin",
+        "fish games",
+        "keno",
+        "slots",
+        "sweepstakes gaming platform"
+      ]
     },
     "entity_id": "operator_fire_kirin",
     "flow": {
@@ -370,7 +443,525 @@
       "provider_mentions": [],
       "title_terms": []
     },
+    "entity_id": "operator_fliff",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_fortune_coins",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_global_poker",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_hello_millions",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_high5",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [
+        "free-to-play",
+        "mobile gaming platform",
+        "social real-time"
+      ],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": [
+        "Huuuge",
+        "Huuuge Casino",
+        "Play Huuuge Casino for Free"
+      ]
+    },
+    "entity_id": "operator_huuuge_casino",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_ignition",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_jackpota",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [
+        "cash prizes",
+        "free bonus",
+        "Sweeps Coins"
+      ],
+      "footer_phrases": [
+        "VGW Group"
+      ],
+      "legal_entity_names": [
+        "VGW",
+        "VGW Group"
+      ],
+      "provider_mentions": [],
+      "title_terms": [
+        "Luckyland Slots",
+        "Play 100+ Slots Games Online For Free"
+      ]
+    },
+    "entity_id": "operator_luckyland",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_mcluck",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_mybookie",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [
+        "bonus tab",
+        "daily entry",
+        "Gold Coins",
+        "Sweeps Cash",
+        "XP Bonuses"
+      ],
+      "footer_phrases": [
+        "18+",
+        "ALWAYS FREE",
+        "MyPrize.us",
+        "No Purchase Necessary",
+        "Payment Agent(s)",
+        "payment credentials"
+      ],
+      "legal_entity_names": [
+        "My Technology, Inc."
+      ],
+      "provider_mentions": [],
+      "title_terms": [
+        "MyPrize US",
+        "Play Together with creators and friends",
+        "social casino",
+        "social gaming platform"
+      ]
+    },
+    "entity_id": "operator_myprize_us",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [
+        "prediction market",
+        "sports trading"
+      ],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": [
+        "America's #1 Sports Trading App",
+        "Novig"
+      ]
+    },
     "entity_id": "operator_novig",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [
+        "24/7 Customer Support",
+        "Fish Game App",
+        "Official Site"
+      ],
+      "legal_entity_names": [],
+      "provider_mentions": [
+        "Fire Kirin"
+      ],
+      "title_terms": [
+        "Panda Master Fish Games",
+        "Panda Master Games",
+        "Panda Master Management System"
+      ]
+    },
+    "entity_id": "operator_panda_master",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [],
+      "legal_entity_names": [],
+      "provider_mentions": [],
+      "title_terms": []
+    },
+    "entity_id": "operator_points_bet",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -469,7 +1060,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_mcluck",
+    "entity_id": "operator_rebet",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -496,13 +1087,26 @@
   },
   {
     "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
+      "bonus_terms": [
+        "daily bonus",
+        "free Sweeps Coins Bonus",
+        "mail a request"
+      ],
+      "footer_phrases": [
+        "Gold Coins",
+        "No Purchase Necessary",
+        "real money gambling",
+        "Sweeps Coins",
+        "Terms of Use"
+      ],
       "legal_entity_names": [],
       "provider_mentions": [],
-      "title_terms": []
+      "title_terms": [
+        "completely free gaming experience",
+        "Sidepot"
+      ]
     },
-    "entity_id": "operator_hello_millions",
+    "entity_id": "operator_sidepot",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -568,7 +1172,97 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_crown_coins",
+    "entity_id": "operator_spree",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [
+        "Cyprus",
+        "HE436222",
+        "social casino operator",
+        "Sweepsteaks Limited"
+      ],
+      "legal_entity_names": [
+        "Sweepsteaks Limited"
+      ],
+      "provider_mentions": [
+        "Animo Studios",
+        "ICONIC21",
+        "Pragmatic Play"
+      ],
+      "title_terms": [
+        "Leading Social Casino",
+        "Social Casino Guide",
+        "Stake.us"
+      ]
+    },
+    "entity_id": "operator_stake_us",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [],
+      "footer_phrases": [
+        "120828",
+        "Gibraltar",
+        "MW Services Limited"
+      ],
+      "legal_entity_names": [
+        "MW Services Limited"
+      ],
+      "provider_mentions": [],
+      "title_terms": [
+        "The Best Free-Play Social Casino",
+        "WOW Vegas"
+      ]
+    },
+    "entity_id": "operator_wow_vegas",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -601,7 +1295,56 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_jackpota",
+    "entity_id": "operator_yay",
+    "flow": {
+      "cashier_paths": [],
+      "kyc_vendors": [],
+      "payment_providers": [],
+      "redemption_paths": [],
+      "signup_paths": []
+    },
+    "provider_signals": {
+      "cdn_patterns": [],
+      "game_launcher_patterns": [],
+      "provider_names": []
+    },
+    "technical": {
+      "analytics_ids": [],
+      "asset_domains": [],
+      "iframe_domains": [],
+      "nameservers": [],
+      "registrar": "",
+      "script_domains": [],
+      "ssl_issuers": [],
+      "support_widget_providers": [],
+      "tag_manager_ids": []
+    }
+  },
+  {
+    "content": {
+      "bonus_terms": [
+        "prize redemption",
+        "Sweepstakes Rules",
+        "Tokens",
+        "YottaCash"
+      ],
+      "footer_phrases": [
+        "always free to play",
+        "No purchase necessary",
+        "Yotta Technologies Inc."
+      ],
+      "legal_entity_names": [
+        "Yotta Technologies Inc."
+      ],
+      "provider_mentions": [],
+      "title_terms": [
+        "Play Games Win Prizes",
+        "Sweepstakes Game",
+        "Yotta",
+        "YottaCash"
+      ]
+    },
+    "entity_id": "operator_yotta",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -667,568 +1410,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "operator_high5",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_global_poker",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_fortune_coins",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_yay",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_ding_ding_ding",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_spree",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_clubs_poker",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_fliff",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_rebet",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_draftkings",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_fanduel",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_betmgm",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_caesars",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_betrivers",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_points_bet",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_bovada",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_ignition",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
-    "entity_id": "operator_mybookie",
+    "entity_id": "payment_manual_001",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -1327,7 +1509,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "provider_pragmatic_play",
+    "entity_id": "provider_animo_studios",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -1393,39 +1575,6 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "provider_playson",
-    "flow": {
-      "cashier_paths": [],
-      "kyc_vendors": [],
-      "payment_providers": [],
-      "redemption_paths": [],
-      "signup_paths": []
-    },
-    "provider_signals": {
-      "cdn_patterns": [],
-      "game_launcher_patterns": [],
-      "provider_names": []
-    },
-    "technical": {
-      "analytics_ids": [],
-      "asset_domains": [],
-      "iframe_domains": [],
-      "nameservers": [],
-      "registrar": "",
-      "script_domains": [],
-      "ssl_issuers": [],
-      "support_widget_providers": [],
-      "tag_manager_ids": []
-    }
-  },
-  {
-    "content": {
-      "bonus_terms": [],
-      "footer_phrases": [],
-      "legal_entity_names": [],
-      "provider_mentions": [],
-      "title_terms": []
-    },
     "entity_id": "provider_iconic21",
     "flow": {
       "cashier_paths": [],
@@ -1459,7 +1608,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "provider_animo_studios",
+    "entity_id": "provider_playson",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
@@ -1492,7 +1641,7 @@
       "provider_mentions": [],
       "title_terms": []
     },
-    "entity_id": "payment_manual_001",
+    "entity_id": "provider_pragmatic_play",
     "flow": {
       "cashier_paths": [],
       "kyc_vendors": [],
