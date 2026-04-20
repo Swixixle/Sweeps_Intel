@@ -21,5 +21,6 @@ data/published/reviewed_blocklist.json
 reports/discovery/
 reports/clusters/
 reports/extraction/
+reports/enrichment/
 reports/review_rules/
 ignition_data/
