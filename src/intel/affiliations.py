@@ -6,6 +6,23 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .schemas import Affiliation, AffiliationEvidence
+from .scout_fingerprint_loader import iter_signal_pairs, load_fingerprints
+
+# Scout TLS / DNS signal weights (pairwise domain-level affiliations from Scout fingerprints).
+# These sit alongside run_affiliations() entity-pair weights (50 legal, 40 analytics, 20 provider,
+# 15 cashier, 10 script/promoter, 5 registrar/NS). Reciprocal cross-SAN is the strongest
+# independent tie we add here; one-way SAN is a hint; filtered NS/MX are corroborating only.
+SCOUT_SIGNAL_WEIGHT_TLS_SAN_RECIPROCAL = 15
+SCOUT_SIGNAL_WEIGHT_TLS_SAN_ONE_WAY = 7
+SCOUT_SIGNAL_WEIGHT_SHARED_NS_FILTERED = 5
+SCOUT_SIGNAL_WEIGHT_SHARED_MX_FILTERED = 4
+
+SCOUT_SIGNAL_WEIGHTS: dict[str, int] = {
+    "tls_san_reciprocal": SCOUT_SIGNAL_WEIGHT_TLS_SAN_RECIPROCAL,
+    "tls_san_one_way": SCOUT_SIGNAL_WEIGHT_TLS_SAN_ONE_WAY,
+    "shared_nameserver_filtered": SCOUT_SIGNAL_WEIGHT_SHARED_NS_FILTERED,
+    "shared_mx_filtered": SCOUT_SIGNAL_WEIGHT_SHARED_MX_FILTERED,
+}
 
 
 def _utc_now_iso() -> str:
@@ -228,6 +245,64 @@ def run_affiliations(normalized_dir: Path, out_path: Path) -> None:
         json.dumps([r.to_json() for r in results], indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
+
+
+def _evidence_value_for_scout_detail(signal_type: str, detail: dict) -> str:
+    if signal_type == "tls_san_reciprocal":
+        return f"{detail.get('domain_a')}|{detail.get('domain_b')}|reciprocal_san"
+    if signal_type == "tls_san_one_way":
+        return f"{detail.get('domain_a')}|{detail.get('domain_b')}|one_way_san"
+    if signal_type == "shared_nameserver_filtered":
+        shared = detail.get("shared_nameservers") or []
+        return str(shared[0]) if shared else "shared_ns"
+    if signal_type == "shared_mx_filtered":
+        shared = detail.get("shared_mx_hosts") or []
+        return str(shared[0]) if shared else "shared_mx"
+    return json.dumps(detail, sort_keys=True)
+
+
+def build_affiliations_from_scout_fingerprints(fingerprints_path: Path) -> list[Affiliation]:
+    """Pairwise ``Affiliation`` rows from Scout domain fingerprints (domain ids, not entity slugs)."""
+    fps = load_fingerprints(fingerprints_path)
+    generated_at = _utc_now_iso()
+    aggregated: dict[tuple[str, str], list[tuple[str, dict, int]]] = {}
+
+    for da, db, signal_type, detail in iter_signal_pairs(fps):
+        weight = SCOUT_SIGNAL_WEIGHTS.get(signal_type)
+        if weight is None:
+            continue
+        key = (da, db) if da <= db else (db, da)
+        aggregated.setdefault(key, []).append((signal_type, detail, weight))
+
+    results: list[Affiliation] = []
+    for (left_domain, right_domain), items in sorted(aggregated.items()):
+        evidence: list[AffiliationEvidence] = []
+        score = 0
+        for signal_type, detail, weight in sorted(items, key=lambda x: x[0]):
+            evidence.append(
+                AffiliationEvidence(
+                    type=signal_type,
+                    value=_evidence_value_for_scout_detail(signal_type, detail),
+                    weight=weight,
+                )
+            )
+            score += weight
+        score = min(score, 100)
+        if score <= 0:
+            continue
+        results.append(
+            Affiliation(
+                left_id=left_domain,
+                right_id=right_domain,
+                score=score,
+                label=_label_for_score(score),
+                evidence=evidence,
+                generated_at=generated_at,
+            )
+        )
+
+    results.sort(key=lambda x: (-x.score, x.left_id, x.right_id))
+    return results
 
 
 def main(argv: list[str] | None = None) -> int:
