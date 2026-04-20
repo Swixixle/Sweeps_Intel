@@ -11,6 +11,10 @@ data/research_candidates/extracted_fingerprints.json
 data/research_candidates/review_queue.json
 data/research_candidates/review_decisions.json
 data/research_candidates/staged_clusters.json
+data/research_candidates/staged_from_scout/promotion_review_summary.json
+data/research_candidates/staged_from_scout/staged_entities.json
+data/research_candidates/staged_from_scout/staged_relationships.json
+data/research_candidates/staged_from_scout/staged_redirects.json
 data/published/reviewed_domains.txt
 data/published/reviewed_blocklist.json
 

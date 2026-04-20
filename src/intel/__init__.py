@@ -13,6 +13,8 @@ __all__ = [
     "review_queue",
     "review_rules",
     "export_reviewed_blocklist",
+    "import_scout_candidates",
+    "review_scout_candidates",
     "stage_research_import",
     "promote_research_candidates",
 ]
