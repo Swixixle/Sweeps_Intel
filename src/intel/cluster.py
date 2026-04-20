@@ -9,14 +9,18 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import re
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 from urllib.parse import urlparse
 
 from intel.schemas import SCHEMA_VERSION
+from intel.scout_fingerprint_loader import iter_signal_pairs, load_fingerprints
+
+logger = logging.getLogger(__name__)
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
@@ -92,6 +96,25 @@ def _merge_evidence(
         a, b = b, a
     key = (a, b)
     store.setdefault(key, []).append(ev)
+
+
+def _load_scout_fingerprint_links(repo_root: Path, link: Callable[..., None]) -> int:
+    """DEFINITIVE-only: reciprocal TLS SAN pairs from Scout ``domain_fingerprints.json``."""
+    path = repo_root / "data" / "research_candidates" / "scout_import" / "domain_fingerprints.json"
+    try:
+        fps = load_fingerprints(path)
+    except (TypeError, ValueError, OSError) as e:
+        logger.warning("scout cluster links: could not load fingerprints from %s: %s", path, e)
+        return 0
+    n = 0
+    try:
+        for da, db, sig, detail in iter_signal_pairs(fps):
+            if sig == "tls_san_reciprocal":
+                link(da, db, "scout_tls_san_reciprocal", detail)
+                n += 1
+    except (TypeError, ValueError, KeyError) as e:
+        logger.warning("scout cluster links: failed while iterating signal pairs: %s", e)
+    return n
 
 
 def run_cluster(
@@ -329,6 +352,8 @@ def run_cluster(
             if h0 and h1 and h0 != h1:
                 link(h0, h1, "discovery_redirect_chain", {"chain": chain})
 
+    scout_tls_links = _load_scout_fingerprint_links(root, link)
+
     # Build cluster components
     all_nodes: set[str] = set(domain_to_scripts.keys())
     all_nodes |= set(ext_scripts.keys())
@@ -369,7 +394,10 @@ def run_cluster(
         "schema_version": SCHEMA_VERSION,
         "cluster_count": len(clusters_out),
         "pair_count": len(pair_evidence),
-        "parameters": {"min_script_overlap": min_script_overlap},
+        "parameters": {
+            "min_script_overlap": min_script_overlap,
+            "scout_tls_reciprocal_links": scout_tls_links,
+        },
     }
 
     out_doc = {
