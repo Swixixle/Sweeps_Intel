@@ -77,6 +77,13 @@ def _confidence_float(row: dict[str, str]) -> float | None:
         k = lk.get(name)
         if not k or not row.get(k, "").strip():
             continue
+        raw = row[k].strip().lower()
+        if raw in ("high", "hi"):
+            return 0.92
+        if raw in ("medium", "med", "mid"):
+            return 0.8
+        if raw in ("low",):
+            return None
         try:
             return float(row[k])
         except ValueError:
@@ -176,7 +183,7 @@ def _entity_record(
         "legal_entity": legal,
         "parent_company": parent,
         "notes": notes,
-        "sources": _first_nonempty(row, ("sources", "source_urls")),
+        "sources": _first_nonempty(row, ("sources", "source_urls", "source_url")),
         "confidence": _confidence_float(row),
         "alias_candidates_non_empty": has_alias,
         "alias_review_status": "needs_manual_verification" if has_alias else "not_applicable",
