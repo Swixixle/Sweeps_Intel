@@ -25,3 +25,7 @@ reports/extraction/
 reports/enrichment/
 reports/review_rules/
 ignition_data/
+
+# Scout handoff (operator-copied outputs; not versioned here)
+data/research_candidates/scout_import/*.json
+!data/research_candidates/scout_import/.gitkeep
