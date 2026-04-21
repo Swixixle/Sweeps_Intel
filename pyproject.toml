@@ -7,7 +7,10 @@ name = "sweeps-intel"
 version = "0.1.0"
 description = "Affiliation-aware entity index and monitoring pipeline"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    # Single allowed exception to zero-dep discipline: Ed25519 verification (see docs/SIGNING.md).
+    "cryptography>=42",
+]
 
 [project.optional-dependencies]
 dev = [
