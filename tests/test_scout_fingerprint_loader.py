@@ -91,6 +91,77 @@ def test_denylisted_nameserver_not_emitted(tmp_path: Path) -> None:
     assert not any(x[2] == "shared_nameserver_filtered" for x in pairs)
 
 
+def test_shared_mx_emitted_despite_dns_partial_when_mx_populated() -> None:
+    """Chumba/Luckyland-style: TLS/DNS partial but MX lists complete and overlapping."""
+    fps = {
+        "chumbacasino.com": {
+            "domain": "chumbacasino.com",
+            "sans": [],
+            "nameservers": ["ns-1.awsdns.net"],
+            "mx": [
+                {"host": "mxa-008f4801.gslb.pphosted.com", "priority": 10},
+                {"host": "mxb-008f4801.gslb.pphosted.com", "priority": 10},
+            ],
+            "tls_partial": True,
+            "dns_partial": True,
+        },
+        "luckylandslots.com": {
+            "domain": "luckylandslots.com",
+            "sans": [],
+            "nameservers": ["ns-2.awsdns.net"],
+            "mx": [
+                {"host": "mxa-008f4801.gslb.pphosted.com", "priority": 10},
+                {"host": "mxb-008f4801.gslb.pphosted.com", "priority": 10},
+            ],
+            "tls_partial": True,
+            "dns_partial": True,
+        },
+    }
+    pairs = list(iter_signal_pairs(fps))
+    mx_pairs = [p for p in pairs if p[2] == "shared_mx_filtered"]
+    assert len(mx_pairs) == 1
+    assert mx_pairs[0][3]["shared_mx_hosts"] == [
+        "mxa-008f4801.gslb.pphosted.com",
+        "mxb-008f4801.gslb.pphosted.com",
+    ]
+    assert not any(p[2].startswith("tls_san") for p in pairs)
+
+
+def test_no_shared_mx_when_one_side_missing_mx() -> None:
+    fps = {
+        "a.example": {
+            "nameservers": ["ns1.x.example"],
+            "mx": [{"host": "mx.only.com", "priority": 1}],
+            "dns_partial": True,
+        },
+        "b.example": {
+            "nameservers": ["ns1.x.example"],
+            "mx": [],
+            "dns_partial": True,
+        },
+    }
+    pairs = list(iter_signal_pairs(fps))
+    assert not any(p[2] == "shared_mx_filtered" for p in pairs)
+
+
+def test_shared_nameserver_only_when_mx_empty() -> None:
+    fps = {
+        "a.example": {
+            "nameservers": ["ns1.rare-corp.example"],
+            "mx": [],
+            "dns_partial": True,
+        },
+        "d.example": {
+            "nameservers": ["ns1.rare-corp.example"],
+            "mx": [],
+            "dns_partial": True,
+        },
+    }
+    pairs = list(iter_signal_pairs(fps))
+    assert any(p[2] == "shared_nameserver_filtered" for p in pairs)
+    assert not any(p[2] == "shared_mx_filtered" for p in pairs)
+
+
 def test_tls_partial_skips_tls_signals(tmp_path: Path) -> None:
     p = tmp_path / "fp.json"
     p.write_text(

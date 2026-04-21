@@ -5,6 +5,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from ._trust_store import TrustStore
 from .schemas import Affiliation, AffiliationEvidence
 from .scout_fingerprint_loader import iter_signal_pairs, load_fingerprints
 
@@ -261,9 +262,17 @@ def _evidence_value_for_scout_detail(signal_type: str, detail: dict) -> str:
     return json.dumps(detail, sort_keys=True)
 
 
-def build_affiliations_from_scout_fingerprints(fingerprints_path: Path) -> list[Affiliation]:
+def build_affiliations_from_scout_fingerprints(
+    fingerprints_path: Path,
+    trust_store: TrustStore | None = None,
+    require_signed: bool = False,
+) -> list[Affiliation]:
     """Pairwise ``Affiliation`` rows from Scout domain fingerprints (domain ids, not entity slugs)."""
-    fps = load_fingerprints(fingerprints_path)
+    fps = load_fingerprints(
+        fingerprints_path,
+        trust_store=trust_store,
+        require_signed=require_signed,
+    )
     generated_at = _utc_now_iso()
     aggregated: dict[tuple[str, str], list[tuple[str, dict, int]]] = {}
 

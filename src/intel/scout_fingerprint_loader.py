@@ -15,7 +15,8 @@ Each record may include (flexible keys):
 - ``sans``, ``san``, or ``tls.sans``: certificate SAN hostnames.
 - ``nameservers`` or ``dns.nameservers``: NS hostnames.
 - ``mx`` or ``dns.mx``: list of dicts with ``host`` (and optional priority).
-- ``partial`` (bool): if true, skip TLS- and DNS-derived signals for this domain.
+- ``partial`` (bool): if true, TLS-derived signals may be skipped for this domain; DNS/MX overlap
+  is still evaluated when ``mx`` / ``nameservers`` data is present (see ``iter_signal_pairs``).
 - ``tls.partial`` / ``dns.partial``: skip only that subsystem when true.
 
 Domain strings are normalized (lowercase, no trailing dot, ``www.`` stripped) for comparison.
@@ -222,7 +223,6 @@ def iter_signal_pairs(fingerprints: dict[str, dict[str, Any]]) -> Iterator[tuple
         for db in domains[i + 1 :]:
             rec_b = fingerprints[db]
             tls_skip = bool(rec_a.get("tls_partial")) or bool(rec_b.get("tls_partial"))
-            dns_skip = bool(rec_a.get("dns_partial")) or bool(rec_b.get("dns_partial"))
 
             if not tls_skip:
                 sa = _san_set_for_peer_check(list(rec_a.get("sans") or []))
@@ -254,9 +254,13 @@ def iter_signal_pairs(fingerprints: dict[str, dict[str, Any]]) -> Iterator[tuple
                         },
                     )
 
-            if not dns_skip:
-                ns_a = filter_signal_nameservers(list(rec_a.get("nameservers") or []))
-                ns_b = filter_signal_nameservers(list(rec_b.get("nameservers") or []))
+            # NS / MX: gated by presence of comparable data, not dns_partial.
+            # Scout may set dns_partial when TLS failed even if DNS (incl. MX) is complete.
+            ns_raw_a = list(rec_a.get("nameservers") or [])
+            ns_raw_b = list(rec_b.get("nameservers") or [])
+            if ns_raw_a and ns_raw_b:
+                ns_a = filter_signal_nameservers(ns_raw_a)
+                ns_b = filter_signal_nameservers(ns_raw_b)
                 inter_ns = sorted({x.lower() for x in ns_a} & {y.lower() for y in ns_b})
                 if inter_ns:
                     yield (
@@ -266,8 +270,11 @@ def iter_signal_pairs(fingerprints: dict[str, dict[str, Any]]) -> Iterator[tuple
                         {"shared_nameservers": inter_ns},
                     )
 
-                mx_a = filter_signal_mx_hosts(list(rec_a.get("mx") or []))
-                mx_b = filter_signal_mx_hosts(list(rec_b.get("mx") or []))
+            mx_raw_a = list(rec_a.get("mx") or [])
+            mx_raw_b = list(rec_b.get("mx") or [])
+            if mx_raw_a and mx_raw_b:
+                mx_a = filter_signal_mx_hosts(mx_raw_a)
+                mx_b = filter_signal_mx_hosts(mx_raw_b)
                 inter_mx = sorted({x.lower() for x in mx_a} & {y.lower() for y in mx_b})
                 if inter_mx:
                     yield (
