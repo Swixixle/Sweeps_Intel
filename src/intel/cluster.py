@@ -19,6 +19,7 @@ from urllib.parse import urlparse
 
 from intel.schemas import SCHEMA_VERSION
 from intel.scout_fingerprint_loader import iter_signal_pairs, load_fingerprints
+from intel._trust_store import TrustStore, load_trust_store
 
 logger = logging.getLogger(__name__)
 
@@ -98,11 +99,23 @@ def _merge_evidence(
     store.setdefault(key, []).append(ev)
 
 
-def _load_scout_fingerprint_links(repo_root: Path, link: Callable[..., None]) -> int:
+def _load_scout_fingerprint_links(
+    repo_root: Path,
+    link: Callable[..., None],
+    *,
+    trust_store: TrustStore | None = None,
+    require_signed: bool = False,
+    expected_key_id: str = "scout-fingerprint-key-v1",
+) -> int:
     """DEFINITIVE-only: reciprocal TLS SAN pairs from Scout ``domain_fingerprints.json``."""
     path = repo_root / "data" / "research_candidates" / "scout_import" / "domain_fingerprints.json"
     try:
-        fps = load_fingerprints(path)
+        fps = load_fingerprints(
+            path,
+            trust_store=trust_store,
+            require_signed=require_signed,
+            expected_key_id=expected_key_id,
+        )
     except (TypeError, ValueError, OSError) as e:
         logger.warning("scout cluster links: could not load fingerprints from %s: %s", path, e)
         return 0
@@ -121,6 +134,9 @@ def run_cluster(
     repo_root: Path | None = None,
     *,
     min_script_overlap: int = 2,
+    trust_store: TrustStore | None = None,
+    require_signed: bool = False,
+    expected_key_id: str = "scout-fingerprint-key-v1",
 ) -> dict[str, Any]:
     root = repo_root or REPO_ROOT
     uf = _UnionFind()
@@ -352,7 +368,13 @@ def run_cluster(
             if h0 and h1 and h0 != h1:
                 link(h0, h1, "discovery_redirect_chain", {"chain": chain})
 
-    scout_tls_links = _load_scout_fingerprint_links(root, link)
+    scout_tls_links = _load_scout_fingerprint_links(
+        root,
+        link,
+        trust_store=trust_store,
+        require_signed=require_signed,
+        expected_key_id=expected_key_id,
+    )
 
     # Build cluster components
     all_nodes: set[str] = set(domain_to_scripts.keys())
@@ -437,8 +459,27 @@ def main() -> None:
         default=2,
         help="Minimum shared script/asset/iframe domains to link two sites (default: 2).",
     )
+    ap.add_argument(
+        "--trust-store",
+        type=Path,
+        default=None,
+        help="Path to trust_store.json for verifying signed Scout domain fingerprints (optional).",
+    )
+    ap.add_argument(
+        "--require-signed",
+        action="store_true",
+        help="Require domain_fingerprints.json to be a signed envelope.",
+    )
     args = ap.parse_args()
-    r = run_cluster(args.repo_root, min_script_overlap=args.min_script_overlap)
+    trust_store: TrustStore | None = None
+    if args.trust_store is not None:
+        trust_store = load_trust_store(args.trust_store)
+    r = run_cluster(
+        args.repo_root,
+        min_script_overlap=args.min_script_overlap,
+        trust_store=trust_store,
+        require_signed=args.require_signed,
+    )
     print(json.dumps(r, indent=2))
 
 

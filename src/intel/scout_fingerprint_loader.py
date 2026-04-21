@@ -1,6 +1,14 @@
 """Load Scout ``domain_fingerprints.json`` and emit pairwise infrastructure signals.
 
-Expected top-level JSON: object mapping apex domain (string) to a record dict.
+Supports two on-disk shapes:
+
+- **Legacy (unsigned):** top-level JSON object mapping apex domain (string) to a record dict.
+- **Signed envelope:** ``{"payload": {...}, "signature": {...}}`` per ``docs/SIGNING.md``.
+  The verified inner payload uses a ``fingerprints`` field for the domain→record map.
+
+Operators must copy Scout's ``keys/public.pem`` material into the repo-root ``trust_store.json``
+entry for ``scout-fingerprint-key-v1`` before verification can succeed; there is no automated
+key distribution yet (see ``docs/SIGNING.md`` known limitations).
 
 Each record may include (flexible keys):
 
@@ -20,6 +28,13 @@ import logging
 from collections.abc import Iterator
 from pathlib import Path
 from typing import Any
+
+from ._signing import (
+    EnvelopeShapeError,
+    SignatureVerificationError,
+    verify_envelope,
+)
+from ._trust_store import TrustStore
 
 from .infra_denylist import filter_signal_mx_hosts, filter_signal_nameservers
 
@@ -98,8 +113,44 @@ def _parse_record(domain_key: str, raw: dict[str, Any]) -> dict[str, Any] | None
         return None
 
 
-def load_fingerprints(path: Path) -> dict[str, dict[str, Any]]:
-    """Load ``domain_fingerprints.json``; return map normalized_domain -> parsed record dict."""
+def _is_signed_envelope(data: Any) -> bool:
+    return (
+        isinstance(data, dict)
+        and isinstance(data.get("payload"), dict)
+        and isinstance(data.get("signature"), dict)
+    )
+
+
+def _parse_domain_map(data: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    out: dict[str, dict[str, Any]] = {}
+    for k, v in data.items():
+        if not isinstance(k, str) or not k.strip():
+            continue
+        dom_key = _normalize_domain(k)
+        if not dom_key:
+            continue
+        if not isinstance(v, dict):
+            logger.warning("scout fingerprint: skip non-object value for domain %r", k)
+            continue
+        parsed = _parse_record(dom_key, v)
+        if parsed:
+            out[dom_key] = parsed
+    return out
+
+
+def load_fingerprints(
+    path: Path,
+    *,
+    trust_store: TrustStore | None = None,
+    require_signed: bool = False,
+    expected_key_id: str = "scout-fingerprint-key-v1",
+) -> dict[str, dict[str, Any]]:
+    """Load domain fingerprints; return map normalized_domain -> parsed record dict.
+
+    If the file is a signed envelope and ``trust_store`` is provided, the signature is
+    verified before use. If the file is signed but ``trust_store`` is omitted, fingerprints
+    are still extracted from the inner payload with a warning (unverified).
+    """
     if not path.is_file():
         logger.warning("scout fingerprint: file missing: %s", path)
         return {}
@@ -117,20 +168,42 @@ def load_fingerprints(path: Path) -> dict[str, dict[str, Any]]:
         logger.warning("scout fingerprint: expected object at root of %s, got %s", path, type(data).__name__)
         return {}
 
-    out: dict[str, dict[str, Any]] = {}
-    for k, v in data.items():
-        if not isinstance(k, str) or not k.strip():
-            continue
-        dom_key = _normalize_domain(k)
-        if not dom_key:
-            continue
-        if not isinstance(v, dict):
-            logger.warning("scout fingerprint: skip non-object value for domain %r", k)
-            continue
-        parsed = _parse_record(dom_key, v)
-        if parsed:
-            out[dom_key] = parsed
-    return out
+    if _is_signed_envelope(data):
+        sig = data["signature"]
+        kid = sig.get("key_id")
+        if not isinstance(kid, str) or not kid.strip():
+            raise EnvelopeShapeError('signed envelope missing non-empty string signature.key_id')
+        if kid != expected_key_id:
+            raise SignatureVerificationError(
+                f"envelope key_id {kid!r} does not match expected {expected_key_id!r}"
+            )
+
+        if trust_store is not None:
+            payload = verify_envelope(
+                data,
+                trust_store,
+                expected_artifact_type="domain_fingerprints",
+            )
+            raw_map = payload.get("fingerprints")
+            if not isinstance(raw_map, dict):
+                raw_map = {}
+            logger.debug("scout fingerprint: loaded signed envelope from %s (verified)", path)
+            return _parse_domain_map(raw_map)
+
+        logger.warning(
+            "signed envelope present but no trust store provided; treating payload as unverified"
+        )
+        inner = data["payload"]
+        raw_map = inner.get("fingerprints")
+        if not isinstance(raw_map, dict):
+            raw_map = {}
+        return _parse_domain_map(raw_map)
+
+    if require_signed:
+        raise EnvelopeShapeError("expected signed envelope, got unsigned list")
+
+    logger.info("using unsigned fingerprint list (legacy path)")
+    return _parse_domain_map(data)
 
 
 def _san_set_for_peer_check(sans: list[str]) -> set[str]:
