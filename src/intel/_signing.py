@@ -1,4 +1,4 @@
-"""Ed25519 signature verification for signed JSON envelopes (see ``docs/SIGNING.md``)."""
+"""Ed25519 signing and verification for JSON envelopes (see ``docs/SIGNING.md``)."""
 
 from __future__ import annotations
 
@@ -7,17 +7,38 @@ import binascii
 import hashlib
 import json
 import logging
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
+import os
+
 from cryptography.exceptions import InvalidSignature
 from cryptography.hazmat.primitives import serialization
-from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey, Ed25519PublicKey
 
 if TYPE_CHECKING:
     from ._trust_store import TrustStore
 
 logger = logging.getLogger(__name__)
+
+
+class SigningError(Exception):
+    """Base class for signing failures (distinct from VerificationError)."""
+
+    pass
+
+
+class SigningKeyError(SigningError):
+    """Private key load or key generation failed."""
+
+    pass
+
+
+class CanonicalizationError(SigningError):
+    """Payload cannot be serialized to canonical JSON."""
+
+    pass
 
 
 class VerificationError(Exception):
@@ -94,6 +115,88 @@ def decode_base64url(s: str) -> bytes:
     t = s.strip()
     pad = (-len(t)) % 4
     return base64.urlsafe_b64decode(t + ("=" * pad))
+
+
+def load_private_key_pem(path: Path) -> Ed25519PrivateKey:
+    """Load an Ed25519 private key from a PEM file (PKCS8, unencrypted)."""
+    try:
+        raw = path.read_bytes()
+    except FileNotFoundError as e:
+        raise SigningKeyError(f"private key file not found: {path}") from e
+    except OSError as e:
+        raise SigningKeyError(f"cannot read private key file {path}: {e}") from e
+    if not raw.strip():
+        raise SigningKeyError(f"private key file is empty: {path}")
+    try:
+        key = serialization.load_pem_private_key(raw, password=None)
+    except ValueError as e:
+        raise SigningKeyError(f"invalid PEM private key in {path}: {e}") from e
+    if not isinstance(key, Ed25519PrivateKey):
+        raise SigningKeyError(
+            f"private key in {path} is {type(key).__name__}, expected Ed25519PrivateKey"
+        )
+    return key
+
+
+def sign_envelope(
+    payload: dict[str, Any],
+    private_key: Ed25519PrivateKey,
+    key_id: str,
+) -> dict[str, Any]:
+    """Build a signed JSON envelope per ``docs/SIGNING.md`` (signature over canonical payload bytes)."""
+    try:
+        canonical = canonical_payload_bytes(payload)
+    except (TypeError, ValueError) as e:
+        raise CanonicalizationError(f"cannot canonicalize payload for signing: {e}") from e
+    digest_hex = compute_payload_hash_hex(canonical)
+    sig = private_key.sign(canonical)
+    sig_b64 = base64.urlsafe_b64encode(sig).decode("ascii").rstrip("=")
+    signed_at = datetime.now(timezone.utc).replace(microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return {
+        "payload": payload,
+        "signature": {
+            "algorithm": "ed25519",
+            "key_id": key_id,
+            "signed_at": signed_at,
+            "payload_hash_sha256": digest_hex,
+            "signature_b64": sig_b64,
+        },
+    }
+
+
+def generate_keypair(out_dir: Path) -> tuple[Path, Path]:
+    """Generate Ed25519 keys; write ``private.pem`` (PKCS8) and ``public.pem`` (SubjectPublicKeyInfo).
+
+    Matches the layout used by Sweeps_Scout so keys are interchangeable across repos.
+    """
+    try:
+        out_dir.mkdir(parents=True, exist_ok=True)
+    except OSError as e:
+        raise SigningKeyError(f"cannot create key directory {out_dir}: {e}") from e
+    priv = Ed25519PrivateKey.generate()
+    pub = priv.public_key()
+    priv_pem = priv.private_bytes(
+        encoding=serialization.Encoding.PEM,
+        format=serialization.PrivateFormat.PKCS8,
+        encryption_algorithm=serialization.NoEncryption(),
+    )
+    pub_pem = pub.public_bytes(
+        encoding=serialization.Encoding.PEM,
+        format=serialization.PublicFormat.SubjectPublicKeyInfo,
+    )
+    priv_path = out_dir / "private.pem"
+    pub_path = out_dir / "public.pem"
+    try:
+        priv_path.write_bytes(priv_pem)
+        pub_path.write_bytes(pub_pem)
+    except OSError as e:
+        raise SigningKeyError(f"cannot write key material under {out_dir}: {e}") from e
+    if os.name == "posix":
+        try:
+            os.chmod(priv_path, 0o600)
+        except OSError as e:
+            raise SigningKeyError(f"cannot chmod private key {priv_path}: {e}") from e
+    return priv_path, pub_path
 
 
 def load_public_key_pem(path: Path) -> Ed25519PublicKey:
