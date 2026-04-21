@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-04-21T04:40:00Z",
+  "keys": [
+    {
+      "key_id": "scout-fingerprint-key-v1",
+      "algorithm": "ed25519",
+      "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAEsbRXMkmRD5UYp47ToCO2HQyXx6KFluHFNRxdcMhpkM=\n-----END PUBLIC KEY-----\n",
+      "issued_at": "2026-04-21T04:36:00Z",
+      "authorized_for": ["domain_fingerprints"],
+      "revoked_at": null,
+      "revocation_reason": null
+    }
+  ]
+}
