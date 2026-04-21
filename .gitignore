@@ -29,3 +29,6 @@ ignition_data/
 # Scout handoff (operator-copied outputs; not versioned here)
 data/research_candidates/scout_import/*.json
 !data/research_candidates/scout_import/.gitkeep
+
+# Local signing keys (never commit private keys)
+keys/**/private.pem
