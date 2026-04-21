@@ -2,6 +2,8 @@
 
 `trust_store.json` at the repo root lists Ed25519 public keys Intel trusts to sign incoming artifacts.
 
+Intel also **signs** its own published outputs (`intel_snapshot.json`, `block_candidates.json`) using two separate Ed25519 keypairs (see `keys/README.md`). Downstream consumers such as Sweeps_Relief add Intel’s **public** keys to their trust store to verify those artifacts; private keys stay only under `keys/` in this repo.
+
 **Public keys only.** Private keys belong in each signing repo's `keys/` directory (which is gitignored), never here.
 
 To add a new trusted key:
